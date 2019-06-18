@@ -21,7 +21,7 @@
 <script type="text/javascript" src="https://img.cdn.apipost.cn/statics/build-in/bootstrap/js/bootstrap.js"></script>
 <script language="javascript">
 	$(function(){
-		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"0","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"0","menu":[{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"0"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"1"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"2"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"3"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"4"},{"apiid":"33080","name":"\u6218\u8d25","sort":"5"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"6"}]}];
+		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"1","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"2","menu":[{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"0"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"1"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"2"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"3"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"4"},{"apiid":"33080","name":"\u6218\u8d25","sort":"5"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"6"}]}];
 		let _init_apiid = 33754;
 
 		//排序
@@ -544,6 +544,231 @@
             "count": 2
         }
     ]
+}</code></pre>
+	            		
+	            		<!-- 开始 response_body_error_text -->
+	            			            		<h4>失败响应示例</h4>
+	            		<pre><code>{
+    "status": "error",
+    "message": "参数错误"
+}</code></pre>
+	            			          		</section>
+	        	</div>
+	      	</div>
+	      		    	<div class="page-wrapper hide" tabindex="35800" role="main">
+	        	<div class="page-inner">
+	          		<section class="markdown-section">
+	            		<h1><i class="fa fa-link" aria-hidden="true"></i>销售顾问</h1>
+	            			            		<h4>接口URL</h4>
+	            		<code>http://newbsy.test/api/v1/sold/getSalesman?cid=1&comno=A01&size=10&search_key=IsSalesman&search_value=1</code>
+	            		<h4>请求方式</h4>
+	            		<code>GET</code>
+	            		<h4>请求 Content-Type</h4>
+	            		<code>application/x-www-form-urlencoded</code>
+
+	            		<!-- 开始 request_all_header -->
+	            		
+	            		<!-- 开始 request_header -->
+	            			            		<div class="document-block-div request_header-div">
+		            		<h4>请求自定义Header</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>Authorization</th>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRlZTVlYWIzZTcwNzM2ODA1MTBiNTdkMTcwYjNiMzdhZTQ1NWIzMzNmYjgzOTFiMmI3MjY1NDk5ZmFjZjQwYmVlZWQ2YmQxNDU0NmY0N2ZjIn0.eyJhdWQiOiIxIiwianRpIjoiNGVlNWVhYjNlNzA3MzY4MDUxMGI1N2QxNzBiM2IzN2FlNDU1YjMzM2ZiODM5MWIyYjcyNjU0OTlmYWNmNDBiZWVlZDZiZDE0NTQ2ZjQ3ZmMiLCJpYXQiOjE1NjA4NTI3NDEsIm5iZiI6MTU2MDg1Mjc0MSwiZXhwIjoxNTYwOTM5MTM2LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.WSA1uHjwtDZyDbzyOXK5TS_N5ltc9wlonZzdd8BPR_Kjvaa30Fe8gsWyyqf_BLoHIbpwZPaFrxH8sYXiYoqxHcg8kKbbNj1ZNOrdmdoOPkGMmHmGF2fKN-opN1klzlb1cnCgfD15Zpa2NVBxdWU3PKjkWOX3YC4mTrDDbLSjm5snmHwnW9ea6w2RO0o1FxtLLORnD3SZ4Nv8A7qtyZnq3ynuyZ3B6Lu0zTrf2XU_pvWePEDcjI5kuRqw8RpudfBxntumfqqqtX4bh48n7nzFnbPGPkxKe_SKX0oBtx48UUaRvCtzn4KWotuyE8_Pt50Arly40BwYPFdqQtUFAZcxzoMzsEuqG0CvcZIUflH0K6KrOOgzoo6STa868CldrwdkPyOYUM9ITs9bREgM2q0Ybs6_RijXjzoWB8SBflEwUn6R5u3yrviNGt7gtbyvAEXcjfJcxwBYn05UbbcLBbbipW0LxOe07pV01HDPwUNm60FxsVoHoTueWj2WlqSg2O7CjSCSxkLvCF4Zjk-Wno864BUzQpfUHtCJwpnK_yX26wReSdrtaKpB-sy9DJDNqsoEnXczt9CSrNZzD_jtkQqpgVGgKSAzvlOsgYJz_FpOPoPvdC10HylR08-YMNfJMzcqDXxvbexNRmJF0BCUsz1MXKMGM4iCVD8CZV3S_UzL774</td>
+			                  			<td>Bearer</td>
+			                  		</tr>
+			                  				              						              						              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 request_body -->
+	            			            								
+						<!-- 开始 request_Query -->
+	            			            		<div class="document-block-div request_query-div">
+		            		<h4>请求Query参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>cid</th>
+			                  			<td>1</td>
+			                  			<td>商户号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>comno</th>
+			                  			<td>A01</td>
+			                  			<td>门店号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>size</th>
+			                  			<td>10</td>
+			                  			<td>分页大小</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>search_key</th>
+			                  			<td>IsSalesman</td>
+			                  			<td>查询条件字段</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>search_value</th>
+			                  			<td>1</td>
+			                  			<td>查询值</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 response_header -->
+	            		
+	            		<!-- 开始 response_cookie -->
+	            		
+	            		<!-- 开始 response_body -->
+	            			            		<div class="document-block-div response_body-div">
+		            		<h4>响应参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th colspan="2">参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th style="text-indent: 0em">status</th>
+			                  			<td colspan="2">状态码</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data</th>
+			                  			<td colspan="2">数据集</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.currentPage</th>
+			                  			<td colspan="2">当前页</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.last_page</th>
+			                  			<td colspan="2">总页数</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.data</th>
+			                  			<td colspan="2">员工档案列表</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.total</th>
+			                  			<td colspan="2">总记录数</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.per_page</th>
+			                  			<td colspan="2">当前分页大小</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 response_body_text_ishide -->
+	            			            		<h4>成功响应示例</h4>
+	            		<pre><code>{
+    "status": "success",
+    "data": {
+        "currentPage": 1,
+        "last_page": 5,
+        "data": [
+            {
+                "id": 1,
+                "cid": 1,
+                "UserCode": "bsy005",
+                "UserName": "麻涛",
+                "Sex": "",
+                "UserPic": "",
+                "thumb": "",
+                "storeid": 1,
+                "store_name": "养车连锁（罗湖店）",
+                "ComNo": "A01",
+                "Department": "售后",
+                "Duty": "高级技工",
+                "Station": "售后",
+                "Class": "保养二组",
+                "WorkType": "美容",
+                "TechnicalPost": "",
+                "Birthday": "2018-09-09",
+                "NativePlace": "",
+                "Marriage": "未婚",
+                "IDCard": "",
+                "HomePhone": "",
+                "HandPhone1": "13378665820",
+                "HandPhone2": "",
+                "OfficePhone": "13378665820",
+                "Email": "",
+                "MSN": "",
+                "QQ": "",
+                "Remarks": "",
+                "HomeAddress": "",
+                "HomePostCode": "",
+                "JoinWorkDate": "2018-09-09",
+                "EnterDate": "2018-09-09",
+                "ContractDate": "2018-09-09",
+                "Degree": "",
+                "Skill": "",
+                "Liking": "",
+                "LeaveDate": "0000-00-00",
+                "LeaveReason": "",
+                "IsBuyer": 1,
+                "IsSalesman": 1,
+                "IsChecker": 1,
+                "IsAccountPerson": 1,
+                "IsQC": 1,
+                "IsWorker": 1,
+                "IsWorkChecker": 1,
+                "IsTestCar": 1,
+                "IsService": 1,
+                "IsDeliveryman": 1,
+                "IsDriver": 1,
+                "IsInsurance": 1,
+                "IsSecondCarPerson": 1,
+                "IsCustomService": 1,
+                "BonusPercent": 0,
+                "IsWorkLeaderName": 1,
+                "PYCode": null,
+                "WBCode": null,
+                "ModifyPersonCode": "031",
+                "ModifyPersonName": "小何",
+                "ModifyWorkStation": null,
+                "ModifyIP": null,
+                "ModifyDate": "2019-04-01",
+                "openid": "oAzKz0-UwLNhSLsbzoZXwH0erB7g",
+                "nickname": "放开我我自己动",
+                "isshow": 1,
+                "isdel": 0,
+                "EmergencyContact": "",
+                "IsReceive": 1,
+                "IsDayReport": 0,
+                "score": null,
+                "voter": 0,
+                "restTime": "",
+                "day_report_time": 0,
+                "sort": 1,
+                "WorkPlace": "无尘1",
+                "SubWorker": "",
+                "SubWorker_id": ""
+            }
+        ],
+        "total": 50,
+        "per_page": "10"
+    }
 }</code></pre>
 	            		
 	            		<!-- 开始 response_body_error_text -->
