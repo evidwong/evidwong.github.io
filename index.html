@@ -285,12 +285,12 @@
 		              						              						              				<tr>
 			                  			<th>cid</th>
 			                  			<td>1</td>
-			                  			<td>无描述</td>
+			                  			<td>商户号</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>comno</th>
 			                  			<td>A01</td>
-			                  			<td>无描述</td>
+			                  			<td>门店号</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
@@ -785,7 +785,7 @@
 	          		<section class="markdown-section">
 	            		<h1><i class="fa fa-link" aria-hidden="true"></i>意向列表</h1>
 	            			            		<h4>接口URL</h4>
-	            		<code>http://newbsy.test/api/v1/sold/getList?cid=1&comno=A01&size=1&page=1&search_date_key=&search_date_start=&search_date_end=</code>
+	            		<code>http://newbsy.test/api/v1/sold/getList?cid=1&comno=A01&size=1&page=1&job=即将,成交&search_key=HandPhone&search_value=15019427980&price=8&search_date_key=&search_date_start=&search_date_end=</code>
 	            		<h4>请求方式</h4>
 	            		<code>GET</code>
 	            		<h4>请求 Content-Type</h4>
@@ -953,6 +953,10 @@
 			                  				              						              						              				<tr>
 			                  			<th style="text-indent: 2em">data.per_page</th>
 			                  			<td colspan="2">当前分页大小</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.data.payed</th>
+			                  			<td colspan="2">订金已付 的数量</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
