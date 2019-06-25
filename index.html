@@ -21,8 +21,8 @@
 <script type="text/javascript" src="https://img.cdn.apipost.cn/statics/build-in/bootstrap/js/bootstrap.js"></script>
 <script language="javascript">
 	$(function(){
-		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"1","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"2","menu":[{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"0"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"1"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"2"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"3"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"4"},{"apiid":"33080","name":"\u6218\u8d25","sort":"5"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"6"}]}];
-		let _init_apiid = 33754;
+		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"1","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"2","menu":[{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"0"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"1"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"2"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"3"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"4"},{"apiid":"33080","name":"\u6218\u8d25","sort":"5"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"6"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"0","menu":[{"apiid":"39959","name":"\u8f66\u578b\u5217\u8868","sort":"0"}]}];
+		let _init_apiid = 39959;
 
 		//排序
 		_left_menus.sort(function(a, b){
@@ -220,7 +220,302 @@
 		        </div>
 		        <h1><!-- 百思易接口文档 --></h1>
 	    	</div>
-	    		    	<div class="page-wrapper hide" tabindex="33754" role="main">
+	    		    	<div class="page-wrapper hide" tabindex="39959" role="main">
+	        	<div class="page-inner">
+	          		<section class="markdown-section">
+	            		<h1><i class="fa fa-link" aria-hidden="true"></i>车型列表</h1>
+	            			            		<h4>接口URL</h4>
+	            		<code>http://newbsy.test/api/v1/cars/getModelsByCate?cid=1&comno=A01&brand=宝马&series=5系&firm=华晨宝马</code>
+	            		<h4>请求方式</h4>
+	            		<code>GET</code>
+	            		<h4>请求 Content-Type</h4>
+	            		<code>application/x-www-form-urlencoded</code>
+
+	            		<!-- 开始 request_all_header -->
+	            		
+	            		<!-- 开始 request_header -->
+	            			            		<div class="document-block-div request_header-div">
+		            		<h4>请求自定义Header</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>Authorization</th>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ2YTdhZDU3Zjk4NDI4MzQ5NzNiMjg2YTI3N2MwZDU0MGUwOTFhNTllYzllMDlhYTcxZTNlNTMzMWZjM2U3ZWFhZGIwMTQ0MWU5YTUwYjc3In0.eyJhdWQiOiIxIiwianRpIjoiNDZhN2FkNTdmOTg0MjgzNDk3M2IyODZhMjc3YzBkNTQwZTA5MWE1OWVjOWUwOWFhNzFlM2U1MzMxZmMzZTdlYWFkYjAxNDQxZTlhNTBiNzciLCJpYXQiOjE1NjA1MDIxMzEsIm5iZiI6MTU2MDUwMjEzMSwiZXhwIjoxNTYwNTg4NTI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.YYT3ohlQiyRDYKFcV1UfHUwd0qsO3SizE0Yv5W2nHeEBq1WoI0Xo9d1AUSpcZUuJFKS1IdG6ZE6C_i13qf-ehkb6JKtgqSFdpDc42VN3Ze2JjD0ec0PtIyw5gRsIA9_nJs05q7kwm1yddJYWLa_OVF0cTEgeRWvf_UUgWP89wXgIBqJZVCUF9U8RqDL2svBNfOCjmyk_DllSsmjh_nVwNe2r2S1scDg52oDKl-oszPbvPmZJKU0PKCfqCXCgQvgZQ2_tTWHuMRvD-ztesn-owFu_Jl7q4P_ncP-M8WqOb34sBa0Bipsyo-iMecFIwE40uhyNTF2TN4h48Li-2wPejyvG3yqqW3gzHQez3YEMZMVAG4qTBwoCI50omVragX6J-gPluoHBX3vSFwuDujEUAD28cwoUxjZ5xjyDeLNgLj2oy8fvB1wIuzhuwir8mfYA2sbHMAPhCmAjmTw3NFSdwEf4pC2QiUVv4OWU2ckUve7Ecj3VN3rYoalEJQFANDsr_x0q0KLsCuBPK74wReiOraVGVIq7uBxQ5aGiQtFaPSVYRrdqupXY3C4WTob5TIhEryKBAvzlK6B59s4yZg7QWRGbwvEEbmM-B6qgh1eM_0jCO0y3HTEmqk7cYTWIdI9CtcfbdWWqVMBYmYjC-ZFuYYL7bFiSE5okc9dO3MIk5z0</td>
+			                  			<td>Bearer</td>
+			                  		</tr>
+			                  				              						              						              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 request_body -->
+	            			            			            		<div class="document-block-div request_body-div">
+		            		<h4>请求Body参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              						              			</tbody>
+		            		</table>
+		            	</div>
+	            								
+						<!-- 开始 request_Query -->
+	            			            		<div class="document-block-div request_query-div">
+		            		<h4>请求Query参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>cid</th>
+			                  			<td>1</td>
+			                  			<td>商户号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>comno</th>
+			                  			<td>A01</td>
+			                  			<td>门店号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>brand</th>
+			                  			<td>宝马</td>
+			                  			<td>品牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>series</th>
+			                  			<td>5系</td>
+			                  			<td>车系</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>firm</th>
+			                  			<td>华晨宝马</td>
+			                  			<td>厂牌</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 response_header -->
+	            		
+	            		<!-- 开始 response_cookie -->
+	            		
+	            		<!-- 开始 response_body -->
+	            			            		<div class="document-block-div response_body-div">
+		            		<h4>响应参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th colspan="2">参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th style="text-indent: 0em">status</th>
+			                  			<td colspan="2">状态码</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data</th>
+			                  			<td colspan="2">文字说明</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.currentPage</th>
+			                  			<td colspan="2">当前页</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.last_page</th>
+			                  			<td colspan="2">分页大小</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.total</th>
+			                  			<td colspan="2">数据总数</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.per_page</th>
+			                  			<td colspan="2">分页大小</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.data</th>
+			                  			<td colspan="2">数据集</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.data.group</th>
+			                  			<td colspan="2">分组名称</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.data.items</th>
+			                  			<td colspan="2">分组数据</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.data.items.brandName</th>
+			                  			<td colspan="2">品牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.data.items.manufacturer</th>
+			                  			<td colspan="2">厂牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.data.items.carLine</th>
+			                  			<td colspan="2">车系</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.data.items.gearboxType</th>
+			                  			<td colspan="2">变速箱</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.data.items.guidePrice</th>
+			                  			<td colspan="2">指导价</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.data.items.cars.price</th>
+			                  			<td colspan="2">华胜好车价，如果没有，cars=null</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 response_body_text_ishide -->
+	            			            		<h4>成功响应示例</h4>
+	            		<pre><code>{
+	"status": "success",
+	"data": {
+		"currentPage": 1,
+		"last_page": 8,
+		"data": [
+			{
+				"group": "2.0T / 135kW 涡轮增压",
+				"items": [
+					{
+						"id": 1319,
+						"accelerationTime": "8.4s",
+						"anEngine": "2.0T 直列4缸 涡轮增压",
+						"appearanceColor": "宝石青;巴西棕;勃艮第红;铂金银;胡卡罗米;开士米银;月光银;矿石白;雪山白;",
+						"batteryChargingTime": null,
+						"batteryWarrantyPolicy": null,
+						"blend": "6.3L/100km",
+						"bodyType": "三厢",
+						"brandName": "宝马",
+						"carLine": "5系",
+						"carModel": "2018款 525Li 豪华设计套装",
+						"dynamicType": "汽油",
+						"gearboxType": "8 手自一体",
+						"guidePrice": "43.69万",
+						"manufacturer": "华晨宝马",
+						"maximumPower": "135kW/290N.m",
+						"modelLevel": "中大型车",
+						"nationalSubsidiesForNewEnergyVehicles": null,
+						"pureElectricMaximumRange": null,
+						"referencePrice": "38.09-38.49万",
+						"standard": "国五",
+						"timeToMarket": "2018/2/24",
+						"topSpeed": "230km/h",
+						"totalMotorPower": null,
+						"warrantyPolicy": "3年或10万公里",
+						"cars": {
+							"id": 24,
+							"cid": 1,
+							"comno": "A01",
+							"user_code": "bsy005",
+							"user_name": "麻涛",
+							"basic_id": 1319,
+							"brand": "宝马",
+							"series": "5系",
+							"model": "2018款 525Li 豪华设计套装",
+							"firm": "华晨宝马",
+							"displacement": "2.0T",
+							"engine": "直列4缸",
+							"engine_type": "涡轮增压",
+							"body_type": "三厢",
+							"appearance_color": "宝石青;巴西棕;勃艮第红;铂金银;胡卡罗米;开士米银;月光银;矿石白;雪山白;",
+							"blend": "6.3L/100km",
+							"gear_box_type": "8 手自一体",
+							"dynamic_type": "汽油",
+							"model_level": "中大型车",
+							"standard": "国五",
+							"guide_price": "43.69",
+							"price": "123.00",
+							"province": 10002,
+							"city": 1000202,
+							"county": 1000202002,
+							"meal": "[{"id": "74", "name": "测试", "price": "11"}]",
+							"start_time": "2019-06-01",
+							"end_time": "2019-07-31",
+							"create_at": "2019-06-18 19:04:42",
+							"update_at": "2019-06-18 11:04:42",
+							"status": 1,
+							"is_hot": 1,
+							"remarks": "1",
+							"admin_id": 77,
+							"is_del": 0,
+							"is_lock": 0,
+							"type": "",
+							"car_ref_price": 0,
+							"year": "",
+							"max_num_power": ""
+						}
+					},
+					{
+						"id": 1328,
+						"accelerationTime": "8.6s",
+						"anEngine": "2.0T 直列4缸 涡轮增压",
+						"appearanceColor": "宝石青;炭黑色;神秘灰;哈瓦那灰;巴西棕;水晶蓝;墨晶灰;冰河银;矿石灰;开士米银;太空灰;矿石白;雪山白;",
+						"batteryChargingTime": null,
+						"batteryWarrantyPolicy": null,
+						"blend": "6.9L/100km",
+						"bodyType": "三厢",
+						"brandName": "宝马",
+						"carLine": "5系",
+						"carModel": "2017款 520Li 典雅型",
+						"dynamicType": "汽油",
+						"gearboxType": "8 手自一体",
+						"guidePrice": "43.56万",
+						"manufacturer": "华晨宝马",
+						"maximumPower": "135kW/270N.m",
+						"modelLevel": "中大型车",
+						"nationalSubsidiesForNewEnergyVehicles": null,
+						"pureElectricMaximumRange": null,
+						"referencePrice": "-",
+						"standard": "国四",
+						"timeToMarket": "2016/7/7",
+						"topSpeed": null,
+						"totalMotorPower": null,
+						"warrantyPolicy": "3年或10万公里",
+						"cars": null
+					}
+				]
+			}
+		],
+		"total": 114,
+		"per_page": 15
+	}
+}</code></pre>
+	            		
+	            		<!-- 开始 response_body_error_text -->
+	            			            		<h4>失败响应示例</h4>
+	            		<pre><code>{
+    "status": "error",
+    "message": "参数错误"
+}</code></pre>
+	            			          		</section>
+	        	</div>
+	      	</div>
+	      		    	<div class="page-wrapper hide" tabindex="33754" role="main">
 	        	<div class="page-inner">
 	          		<section class="markdown-section">
 	            		<h1><i class="fa fa-link" aria-hidden="true"></i>公共资料</h1>
