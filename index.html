@@ -21,8 +21,8 @@
 <script type="text/javascript" src="https://img.cdn.apipost.cn/statics/build-in/bootstrap/js/bootstrap.js"></script>
 <script language="javascript">
 	$(function(){
-		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"1","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"2","menu":[{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"0"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"1"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"2"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"3"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"4"},{"apiid":"33080","name":"\u6218\u8d25","sort":"5"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"6"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"0","menu":[{"apiid":"39959","name":"\u8f66\u578b\u5217\u8868","sort":"0"}]}];
-		let _init_apiid = 39959;
+		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"3","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"4","menu":[{"apiid":"41913","name":"\u7ef4\u4fee\u8d44\u6599","sort":"0"},{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"0"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"1"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"2"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"3"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"4"},{"apiid":"33080","name":"\u6218\u8d25","sort":"5"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"6"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"2","menu":[{"apiid":"39959","name":"\u8f66\u578b\u5217\u8868","sort":"0"}]},{"folder_id":"4722","name":"\u57fa\u7840","sort":"1","menu":[{"apiid":"41921","name":"\u6388\u6743","sort":"0"}]}];
+		let _init_apiid = 41921;
 
 		//排序
 		_left_menus.sort(function(a, b){
@@ -220,7 +220,244 @@
 		        </div>
 		        <h1><!-- 百思易接口文档 --></h1>
 	    	</div>
-	    		    	<div class="page-wrapper hide" tabindex="39959" role="main">
+	    		    	<div class="page-wrapper hide" tabindex="41921" role="main">
+	        	<div class="page-inner">
+	          		<section class="markdown-section">
+	            		<h1><i class="fa fa-link" aria-hidden="true"></i>授权</h1>
+	            			            		<h4>接口URL</h4>
+	            		<code>http://newbsy.test/oauth/token</code>
+	            		<h4>请求方式</h4>
+	            		<code>POST</code>
+	            		<h4>请求 Content-Type</h4>
+	            		<code>multipart/form-data</code>
+
+	            		<!-- 开始 request_all_header -->
+	            		
+	            		<!-- 开始 request_header -->
+	            		
+	            		<!-- 开始 request_body -->
+	            			            			            		<div class="document-block-div request_body-div">
+		            		<h4>请求Body参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              						              						              				<tr>
+			                  			<th>cid</th>
+			                  			<td>1</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>username</th>
+			                  			<td>qpcs</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>password</th>
+			                  			<td>qpcs</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>client_id</th>
+			                  			<td>1</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>client_secret</th>
+			                  			<td>n0UoAKqf3xmlJJPqBHrxkes1v57Ts44YXl44ZSnR</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>provider</th>
+			                  			<td>admins</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>grant_type</th>
+			                  			<td>password</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>captcha_code</th>
+			                  			<td>7</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>captcha_key</th>
+			                  			<td>1</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            								
+						<!-- 开始 request_Query -->
+	            		
+	            		<!-- 开始 response_header -->
+	            		
+	            		<!-- 开始 response_cookie -->
+	            		
+	            		<!-- 开始 response_body -->
+	            		
+	            		<!-- 开始 response_body_text_ishide -->
+	            		
+	            		<!-- 开始 response_body_error_text -->
+	            			          		</section>
+	        	</div>
+	      	</div>
+	      		    	<div class="page-wrapper hide" tabindex="41913" role="main">
+	        	<div class="page-inner">
+	          		<section class="markdown-section">
+	            		<h1><i class="fa fa-link" aria-hidden="true"></i>维修资料</h1>
+	            			            		<h4>接口URL</h4>
+	            		<code>http://newbsy.test/api/v1/sold/repairpublic?cid=1&comno=A01&pid=8</code>
+	            		<h4>请求方式</h4>
+	            		<code>GET</code>
+	            		<h4>请求 Content-Type</h4>
+	            		<code>application/x-www-form-urlencoded</code>
+
+	            		<!-- 开始 request_all_header -->
+	            		
+	            		<!-- 开始 request_header -->
+	            			            		<div class="document-block-div request_header-div">
+		            		<h4>请求自定义Header</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>Authorization</th>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ5ZDRiN2I2MmZmMmMwMDMyZGRhYjIyYTgwNDQ2MTg5ZDE2OGVkZTkyM2NkYjEzNzRmZDlkOTllYzk3Y2I3NzYwOThhZjk5YjFmMzc5ZDIwIn0.eyJhdWQiOiIxIiwianRpIjoiNDlkNGI3YjYyZmYyYzAwMzJkZGFiMjJhODA0NDYxODlkMTY4ZWRlOTIzY2RiMTM3NGZkOWQ5OWVjOTdjYjc3NjA5OGFmOTliMWYzNzlkMjAiLCJpYXQiOjE1NjE2MjU5NzIsIm5iZiI6MTU2MTYyNTk3MiwiZXhwIjoxNTYxNzEyMzY5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.oBIk2NCeDmd43OrrMgXsMbzxucVyiFnFoiQtPENVkoN2AYBe-ocpf18EA_X95Cs7PnUyUCIAiXPiu2nc8MKZh7Fo4lfRJsqtJaTIWhbOWgfRdFcZv_AxrCb0Wg-Lf8iV5zJYLoxZHokA5NOHVheNP8H3QRUwtDdMx3pXTLa4EsBqmE8LGcZ3K8663g0UJt7124bbOwyq-diN0NGFrDP3RyXRBT12Urfxh-5JeW-_xDj33Zurlt0vgnAMMfVeQrymZfLapPT_aH8iPWHrPqdrMrFr40ys4JP2iMzJLqQ-GdvFaNX1OojZHkit9QlYbCoTQzNNob1tuuaHUd9tLid6TBwzrOQg5Aw2OiOK4VoUTx9TDGxPTcNRWU0FNCsO4-g7grf9SkVxqIO6712mEA9L_qV2UXm4OWqhoSUw4IIy7RSSsGgxQYVJUWoRQ5oRSfT3NlJM_PlrRM_LDyb9wFGnpbzNx1p6ncvx1GZcZpiBZ0uIsahLDezWdt911GY3GFUwlhryEoDXUpNYQnD53WE5hGtdqqhdJhdjWdJEN_K5Dmvoi1c4l-niLhcISLaIHEM5DbfIuk-IMZ1n9EjcbpmcXuFz12e0nt3ODcuizDGtnqzCCVAIH4ehpMj6lcKPDLoie9KRHU1OtgGXYogW3I-CxnV6__t12YQYqfgil5fJtbw</td>
+			                  			<td>Bearer</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 request_body -->
+	            			            			            		<div class="document-block-div request_body-div">
+		            		<h4>请求Body参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              						              			</tbody>
+		            		</table>
+		            	</div>
+	            								
+						<!-- 开始 request_Query -->
+	            			            		<div class="document-block-div request_query-div">
+		            		<h4>请求Query参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>cid</th>
+			                  			<td>1</td>
+			                  			<td>商户号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>comno</th>
+			                  			<td>A01</td>
+			                  			<td>门店号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>pid</th>
+			                  			<td>8</td>
+			                  			<td>1 维修类型, 2 工种, 3 工位, 4 账类, 5 项目类型, 6 车辆类型, 7 优惠方案, 8 随车附件, 9 班组</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 response_header -->
+	            		
+	            		<!-- 开始 response_cookie -->
+	            		
+	            		<!-- 开始 response_body -->
+	            			            		<div class="document-block-div response_body-div">
+		            		<h4>响应参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th colspan="2">参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th style="text-indent: 0em">status</th>
+			                  			<td colspan="2">状态码</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data</th>
+			                  			<td colspan="2">文字说明</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.id</th>
+			                  			<td colspan="2">ID</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.name</th>
+			                  			<td colspan="2">名称</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.pid</th>
+			                  			<td colspan="2">1 客户来源, 2 公司性质, 3 客户种类, 4 客户级别, 5 回访方式, 6 回访结果, 7 失败原因, 8 检测项目, 9 信用等级, 10 意向级别</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.visitday</th>
+			                  			<td colspan="2">意向级别的天数，1 表示 1天……</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 response_body_text_ishide -->
+	            			            		<h4>成功响应示例</h4>
+	            		<pre><code>{
+	"status": "success",
+	"data": [
+		{
+			"id": 11,
+			"pid": 2,
+			"name": "即将",
+			"visitday": 1,
+		}
+	]
+}</code></pre>
+	            		
+	            		<!-- 开始 response_body_error_text -->
+	            			            		<h4>失败响应示例</h4>
+	            		<pre><code>{
+    "status": "error",
+    "message": "参数错误"
+}</code></pre>
+	            			          		</section>
+	        	</div>
+	      	</div>
+	      		    	<div class="page-wrapper hide" tabindex="39959" role="main">
 	        	<div class="page-inner">
 	          		<section class="markdown-section">
 	            		<h1><i class="fa fa-link" aria-hidden="true"></i>车型列表</h1>
@@ -1970,7 +2207,7 @@
 			                  				              						              						              				<tr>
 			                  			<th>page</th>
 			                  			<td>1</td>
-			                  			<td>无描述</td>
+			                  			<td>当前页</td>
 			                  		</tr>
 			                  				              						              						              						              			</tbody>
 		            		</table>
@@ -2152,6 +2389,10 @@
 			                  				              						              						              				<tr>
 			                  			<th style="text-indent: 0em">data.per_page</th>
 			                  			<td colspan="2">当前页数量大小</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.items.tag</th>
+			                  			<td colspan="2">标签</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
