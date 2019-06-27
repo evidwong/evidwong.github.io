@@ -427,8 +427,12 @@
 			                  			<td colspan="2">1 客户来源, 2 公司性质, 3 客户种类, 4 客户级别, 5 回访方式, 6 回访结果, 7 失败原因, 8 检测项目, 9 信用等级, 10 意向级别</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
-			                  			<th style="text-indent: 2em">data.visitday</th>
-			                  			<td colspan="2">意向级别的天数，1 表示 1天……</td>
+			                  			<th style="text-indent: 2em">data.group_name</th>
+			                  			<td colspan="2">分组名</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">rectype</th>
+			                  			<td colspan="2">类型</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
@@ -437,15 +441,17 @@
 	            		<!-- 开始 response_body_text_ishide -->
 	            			            		<h4>成功响应示例</h4>
 	            		<pre><code>{
-	"status": "success",
-	"data": [
-		{
-			"id": 11,
-			"pid": 2,
-			"name": "即将",
-			"visitday": 1,
-		}
-	]
+    "status": "success",
+    "data": [
+        {
+            "id": 303,
+            "cid": 1,
+            "name": "灭火器",
+            "pid": 8,
+            "group_name": "灭火器",
+            "rectype": null
+        }
+    ]
 }</code></pre>
 	            		
 	            		<!-- 开始 response_body_error_text -->
