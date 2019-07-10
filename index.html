@@ -21,7 +21,7 @@
 <script type="text/javascript" src="https://img.cdn.apipost.cn/statics/build-in/bootstrap/js/bootstrap.js"></script>
 <script language="javascript">
 	$(function(){
-		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"3","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"4","menu":[{"apiid":"41913","name":"\u7ef4\u4fee\u8d44\u6599","sort":"0"},{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"2"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"3"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"4"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"5"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"6"},{"apiid":"33080","name":"\u6218\u8d25","sort":"7"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"8"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"2","menu":[{"apiid":"47981","name":"\u8f66\u578b\u5217\u8868","sort":"0"},{"apiid":"47669","name":"\u8f66\u578b\u56fe\u7247\u4e0a\u4f20","sort":"1"},{"apiid":"43647","name":"\u54c1\u724c\u5217\u8868","sort":"2"},{"apiid":"47545","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u7cfb","sort":"4"},{"apiid":"47635","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u578b","sort":"5"}]},{"folder_id":"4722","name":"\u57fa\u7840","sort":"1","menu":[{"apiid":"41921","name":"\u6388\u6743","sort":"0"}]}];
+		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"3","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb(\u5df2\u4f5c\u5e9f)","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"4","menu":[{"apiid":"41913","name":"\u7ef4\u4fee\u8d44\u6599","sort":"0"},{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"2"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"3"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"4"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"5"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"6"},{"apiid":"33080","name":"\u6218\u8d25","sort":"7"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"8"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"2","menu":[{"apiid":"47981","name":"\u8f66\u578b\u5217\u8868","sort":"0"},{"apiid":"47669","name":"\u8f66\u578b\u56fe\u7247\u4e0a\u4f20","sort":"1"},{"apiid":"43647","name":"\u54c1\u724c\u5217\u8868","sort":"2"},{"apiid":"47545","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u7cfb","sort":"4"},{"apiid":"47635","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u578b","sort":"5"}]},{"folder_id":"4722","name":"\u57fa\u7840","sort":"1","menu":[{"apiid":"41921","name":"\u6388\u6743","sort":"0"}]}];
 		let _init_apiid = 47981;
 
 		//排序
@@ -872,7 +872,7 @@
 	          		<section class="markdown-section">
 	            		<h1><i class="fa fa-link" aria-hidden="true"></i>品牌列表</h1>
 	            			            		<h4>接口URL</h4>
-	            		<code>http://newbsy.test/api/v1/cars/quotebrand</code>
+	            		<code>http://bsy.test/api/v1/cars/quotebrand</code>
 	            		<h4>请求方式</h4>
 	            		<code>POST</code>
 	            		<h4>请求 Content-Type</h4>
@@ -894,7 +894,7 @@
 		              			<tbody>
 		              						              						              				<tr>
 			                  			<th>Authorization</th>
-			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAzYmYyYTAwYWI4MjA4N2IyNDFkNTI4NTYzNDg0N2MzNDg1MmVmYjA3NDM1N2E2ODhjOGUxNjgzNjcxNGFiOTkwOTE0YzY2MzBjNmMwMmVkIn0.eyJhdWQiOiIxIiwianRpIjoiMDNiZjJhMDBhYjgyMDg3YjI0MWQ1Mjg1NjM0ODQ3YzM0ODUyZWZiMDc0MzU3YTY4OGM4ZTE2ODM2NzE0YWI5OTA5MTRjNjYzMGM2YzAyZWQiLCJpYXQiOjE1NjAzOTI0NzEsIm5iZiI6MTU2MDM5MjQ3MSwiZXhwIjoxNTYwNDc4ODcxLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.KRy7RZmAAHFnutwiblCxLqSXP8L2SuyJ7O51UReKd1FYVJvKaU5KMoSY1n-W35lyWKV4aokQfZQjGOThyFtcIBg0uu6Uz2dam26kXpp2TrHPCUrTrHw2isbSj-gnSnSI9kbaMI_IamXVfJXSJql8el3GSLqPNXk_0n9ScbvjCrd6nPSiZFN2QQ3i0BQ0mIn_83sGkxedkjdFjnfWd-biEyfbX1AdfMnICPxPiGix0BLruclXWiToDlHx6NpOqvE3eliATm-fNsEIVb5nb1xFg0pflV1rR62m9NRZvMecweptx2KnCisYAuPv1yrEkw2XNkvFkUKZls_oLWSQqkCGnxEeKaSfaFWOdfYrqSs3jSNSaYLvapJqqcUHlteCjhhrm9sA1pGAfLuySn03n7kGqUZ0LzE3KlG2sPEc3aqcJ_dcNgKHQR1KJ9g5eY0ouls1pdKvQQglqXhfAjYNnhDMGXPb8fEzhnKn_P0_QYS0wVSkYtBnL8YInPNPTot5tiHv2bzp5jRjtS2tdqV_Kbz-vv7o8-gcuHq7MmqRrY7lhatTXSWF33CJsnAek2VxuuhBlSEpGAW_Ucl8VO0vaHYSyViXQ9OrxYJFZtQHDgBhHz4YT_IpgudS90H2AyQUD3qbnTNIi5Qd1G9ps5dWQ4qrcHK90AqxGfiWQSBRK7yn2Rs</td>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImE5ZGZjODYwOWY5MDg0ZDRhMjY2MDA0NWQwZmFiZGU5NGZiMTViYmIzZDcwMTQzNGUzZDU2OTA2OThkZDEzYTI5M2Y1MDJlNjY2OTU3M2ZlIn0.eyJhdWQiOiIyIiwianRpIjoiYTlkZmM4NjA5ZjkwODRkNGEyNjYwMDQ1ZDBmYWJkZTk0ZmIxNWJiYjNkNzAxNDM0ZTNkNTY5MDY5OGRkMTNhMjkzZjUwMmU2NjY5NTczZmUiLCJpYXQiOjE1NjI3MjMwNTQsIm5iZiI6MTU2MjcyMzA1NCwiZXhwIjoxNTYyODA5NDUzLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.b3_pp0vwxmv-I9Q3Jd-BPDEwyixDgt6LIfWPdUUSiqjHmLq4nliAJXwIs2lLmNx13p89kPMo60gDXx2B2-GxScMtm4KhIT9FNt0G7IeDPyWTmbKRYyucfc64SVBQYzjh-5oFoLkZdpBpCdRd5tKDovlaHQagmfKfYe9L41G34nRm14dfUj1lbhkMUPOMX6MRtw2krHsqwYvZ0oCoUxx59J0nRnwW4q8jSiGJMS1RoRIQZ5MiUZ4SBwHzEhnhA7WJAxk3hOchlw7_Nij6N3cr0X5jR4EG2eOVDIYcdh0RMh5OTbE2oFx3qjtG6GlumQW4A_vZjiluAEtRiaPg_53FFfE9TFEzwVoZJVFAVHAD83VC3suG1AWuymbvWl0gSeD2sZ_8ndylqzPOEdI2uuZ9C8CZfjB3ceTxlTe6yRzBsIm672fFIHFIOsUd6OJ4knN-ziCARQReeKKJTwu13mUIf0Y5l70dttaUz-0qNZwU5F7V_wGJjwsV8p-plh4OE_Kba8eeT7nnQ3Rjv_8b6JO-6PAJ5t4KhXixkRr_H6P0J-mvxvlpFouMN6JBpuvoS_kAJ-fAROVSOESW4hY5lnlNlbk2HP1uC1GaNmex2I11jv27y67--oBzHe9JhbJZpX2eIX0mIybGy6Cu_Fr2of2bGuPm32IsmXOOuc0ghBbZ_ow</td>
 			                  			<td>Bearer</td>
 			                  		</tr>
 			                  				              						              						              						              			</tbody>
@@ -928,20 +928,6 @@
 		            	</div>
 	            								
 						<!-- 开始 request_Query -->
-	            			            		<div class="document-block-div request_query-div">
-		            		<h4>请求Query参数</h4>
-		            		<table>
-		              			<thead>
-		                			<tr>
-			                  			<th>参数</th>
-			                  			<th>示例值</th>
-			                  			<th>参数描述</th>
-			                  		</tr>
-		              			</thead>
-		              			<tbody>
-		              						              						              						              						              						              			</tbody>
-		            		</table>
-		            	</div>
 	            		
 	            		<!-- 开始 response_header -->
 	            		
@@ -964,7 +950,7 @@
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th style="text-indent: 0em">data</th>
-			                  			<td colspan="2">数据集</td>
+			                  			<td colspan="2">品牌列表</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th style="text-indent: 2em">data.id</th>
@@ -988,11 +974,55 @@
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th style="text-indent: 2em">data.image</th>
-			                  			<td colspan="2">图标URl</td>
+			                  			<td colspan="2">图标URL</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.data</th>
+			                  			<td colspan="2">数据集</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 4em">data.data.factory</th>
+			                  			<td colspan="2">厂牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 4em">data.data.items</th>
+			                  			<td colspan="2">数据列表</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 6em">data.data.items.brand</th>
+			                  			<td colspan="2">品牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 6em">data.data.items.series</th>
+			                  			<td colspan="2">车系</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 6em">data.data.items.firm</th>
+			                  			<td colspan="2">厂牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 6em">data.data.items.from_type</th>
+			                  			<td colspan="2">类型：0 固定车型，1 自定义车型</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 6em">data.data.items.series_id</th>
+			                  			<td colspan="2">车系ID</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 6em">data.data.items.brand_id</th>
+			                  			<td colspan="2">品牌ID</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 6em">data.data.items.count</th>
+			                  			<td colspan="2">车源数量</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 4em">data.data.count</th>
+			                  			<td colspan="2">厂牌对应的车系数量</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th style="text-indent: 2em">data.count</th>
-			                  			<td colspan="2">车源总数</td>
+			                  			<td colspan="2">车系总数</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
@@ -1001,51 +1031,32 @@
 	            		<!-- 开始 response_body_text_ishide -->
 	            			            		<h4>成功响应示例</h4>
 	            		<pre><code>{
-    "status": 200,
+    "status": "success",
     "data": [
         {
-            "id": 18,
-            "imgName": "m_157_100.png",
-            "name": "宝骏",
-            "first_chr": "B",
+            "id": 13,
+            "imgName": "m_9_100.png",
+            "name": "奥迪",
+            "first_chr": "A",
             "is_hot": 1,
-            "image": "https:\/\/erp.baisyi.net\/Public\/vehicle\/m_157_100.png",
-            "count": 4
-        },
-        {
-            "id": 19,
-            "imgName": "m_3_100.png",
-            "name": "宝马",
-            "first_chr": "B",
-            "is_hot": 0,
-            "image": "https:\/\/erp.baisyi.net\/Public\/vehicle\/m_3_100.png",
-            "count": 3
-        },
-        {
-            "id": 20,
-            "imgName": "m_2_100.png",
-            "name": "奔驰",
-            "first_chr": "B",
-            "is_hot": 0,
-            "image": "https:\/\/erp.baisyi.net\/Public\/vehicle\/m_2_100.png",
-            "count": 2
-        },
-        {
-            "id": 22,
-            "imgName": "m_127_100.png",
-            "name": "别克",
-            "first_chr": "B",
-            "is_hot": 0,
-            "image": "https:\/\/erp.baisyi.net\/Public\/vehicle\/m_127_100.png",
-            "count": 2
-        },
-        {
-            "id": 24,
-            "imgName": "m_15_100.png",
-            "name": "比亚迪",
-            "first_chr": "B",
-            "is_hot": 0,
-            "image": "https:\/\/erp.baisyi.net\/Public\/vehicle\/m_15_100.png",
+            "image": "https:\/\/erp.baisyi.net\/Public\/vehicle\/m_9_100.png",
+            "data": [
+                {
+                    "factory": "一汽奥迪",
+                    "items": [
+                        {
+                            "brand": "奥迪",
+                            "series": "A3",
+                            "firm": "一汽奥迪",
+                            "from_type": 0,
+                            "series_id": 0,
+                            "brand_id": null,
+                            "count": 2
+                        }
+                    ],
+                    "count": 2
+                }
+            ],
             "count": 2
         }
     ]
@@ -1375,7 +1386,7 @@
 	      		    	<div class="page-wrapper hide" tabindex="32632" role="main">
 	        	<div class="page-inner">
 	          		<section class="markdown-section">
-	            		<h1><i class="fa fa-link" aria-hidden="true"></i>车系</h1>
+	            		<h1><i class="fa fa-link" aria-hidden="true"></i>车系(已作废)</h1>
 	            			            		<h4>接口URL</h4>
 	            		<code>http://newbsy.test/api/v1/cars/quoteseries</code>
 	            		<h4>请求方式</h4>
