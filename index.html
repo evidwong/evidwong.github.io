@@ -21,7 +21,7 @@
 <script type="text/javascript" src="https://img.cdn.apipost.cn/statics/build-in/bootstrap/js/bootstrap.js"></script>
 <script language="javascript">
 	$(function(){
-		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"3","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"4","menu":[{"apiid":"41913","name":"\u7ef4\u4fee\u8d44\u6599","sort":"0"},{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"2"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"3"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"4"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"5"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"6"},{"apiid":"33080","name":"\u6218\u8d25","sort":"7"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"8"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"2","menu":[{"apiid":"47981","name":"\u8f66\u578b\u5217\u8868","sort":"0"},{"apiid":"47669","name":"\u8f66\u578b\u56fe\u7247\u4e0a\u4f20","sort":"1"},{"apiid":"43647","name":"\u54c1\u724c\u5217\u8868","sort":"2"},{"apiid":"47545","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u7cfb","sort":"4"},{"apiid":"47635","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u578b","sort":"5"}]},{"folder_id":"4722","name":"\u57fa\u7840","sort":"1","menu":[{"apiid":"41921","name":"\u6388\u6743","sort":"0"}]}];
+		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"3","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"4","menu":[{"apiid":"41913","name":"\u7ef4\u4fee\u8d44\u6599","sort":"0"},{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"2"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"3"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"4"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"5"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"6"},{"apiid":"33080","name":"\u6218\u8d25","sort":"7"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"8"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"2","menu":[{"apiid":"47981","name":"\u8f66\u578b\u5217\u8868","sort":"0"},{"apiid":"47669","name":"\u8f66\u578b\u56fe\u7247\u4e0a\u4f20","sort":"1"},{"apiid":"55369","name":"\u81ea\u5b9a\u4e49\u8f66\u578b\u8be6\u7ec6\u4fe1\u606f","sort":"2"},{"apiid":"43647","name":"\u54c1\u724c\u5217\u8868","sort":"2"},{"apiid":"47545","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u7cfb","sort":"4"},{"apiid":"47635","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u578b","sort":"5"}]},{"folder_id":"4722","name":"\u57fa\u7840","sort":"1","menu":[{"apiid":"41921","name":"\u6388\u6743","sort":"0"}]}];
 		let _init_apiid = 47981;
 
 		//排序
@@ -1528,6 +1528,356 @@
             ]
         }
     ]
+}</code></pre>
+	            		
+	            		<!-- 开始 response_body_error_text -->
+	            			            		<h4>失败响应示例</h4>
+	            		<pre><code>{
+    "status": "error",
+    "message": "参数错误"
+}</code></pre>
+	            			          		</section>
+	        	</div>
+	      	</div>
+	      		    	<div class="page-wrapper hide" tabindex="55369" role="main">
+	        	<div class="page-inner">
+	          		<section class="markdown-section">
+	            		<h1><i class="fa fa-link" aria-hidden="true"></i>自定义车型详细信息</h1>
+	            			            		<h4>接口URL</h4>
+	            		<code>http://bsy.test/api/v1/cars/getmodelinfo?cid=1&comno=A01&id=3</code>
+	            		<h4>请求方式</h4>
+	            		<code>GET</code>
+	            		<h4>请求 Content-Type</h4>
+	            		<code>application/x-www-form-urlencoded</code>
+
+	            		<!-- 开始 request_all_header -->
+	            		
+	            		<!-- 开始 request_header -->
+	            			            		<div class="document-block-div request_header-div">
+		            		<h4>请求自定义Header</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>Authorization</th>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjIyMTJkODRjMmRjZjdlMTFiN2I0Y2Y0MDc2NmQ1Y2M0NjM2MTUyZjk2M2Q5ODgxMjgwYTNjYTE2MGE1ZGRkMzUxMTVmMTM5MzVhYmJkZmE4In0.eyJhdWQiOiIyIiwianRpIjoiMjIxMmQ4NGMyZGNmN2UxMWI3YjRjZjQwNzY2ZDVjYzQ2MzYxNTJmOTYzZDk4ODEyODBhM2NhMTYwYTVkZGQzNTExNWYxMzkzNWFiYmRmYTgiLCJpYXQiOjE1NjMyNDIyODcsIm5iZiI6MTU2MzI0MjI4NywiZXhwIjoxNTYzMzI4Njg3LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.jJifggqdzbDpDxZgqLiCw_rz8WrjPrjjffQHMZ8ciVg8KumroCZB53pQZBxgf-gWVLx5RU2xymwtcL2CZpxm1nVzaiJyce5vreWeSTqVnEHU05pdkAc2oGhdSLTuf8dDxmZlBxW_ZSqgjrscV65HkwVtLSKiSHnyoh-a1qVJ2H4jGs8h_DxStKpEMWwTkTbT0RsuMjLvfJl41QFhIl7sQ2JbSROlkgsujxgVCt8mLYttxHookm05QV0B0xIQpTS3H_YiVlsEyjmwqhBWZGTue40fhVx3UKxjGTFWpzOr5zC3ppWF2Le6D8s5Nm_tffGhmTCJHR5XJsrnyEukGia1fHBjLyrCwVFVlrHvljOzYF3zvgyhjbm7rY39gw4CXQCD1mws9MngclGpawa1jFj0_GUJ24NKnQaqqPdII-nx49jrnCbZ7mR7uedJ0kzt-Y0LX7s0bx3sLzqVTMoQixt2jHu_6CQ3s9Oq2y68GQ2stZmSZRodcERctIhRBpQZZe9QdrciGIBGb4WkAtlGqZvPruXuD8tYclzHLDj20YOOQbZFPncjkoAC2BepjcWcLb4fz2v0auEQCWM-THbAy071JGDiGgdYvf65puJzvSO1RsSeK2ncHD1zAtp07RQysfZymUYVcy2ktFlbp4QG8945rO0k_TiAfmJ8CSfplK5oKdY</td>
+			                  			<td>Bearer</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 request_body -->
+	            			            			            		<div class="document-block-div request_body-div">
+		            		<h4>请求Body参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              						              			</tbody>
+		            		</table>
+		            	</div>
+	            								
+						<!-- 开始 request_Query -->
+	            			            		<div class="document-block-div request_query-div">
+		            		<h4>请求Query参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>cid</th>
+			                  			<td>1</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>comno</th>
+			                  			<td>A01</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>id</th>
+			                  			<td>3</td>
+			                  			<td>无描述</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 response_header -->
+	            		
+	            		<!-- 开始 response_cookie -->
+	            		
+	            		<!-- 开始 response_body -->
+	            			            		<div class="document-block-div response_body-div">
+		            		<h4>响应参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th colspan="2">参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th style="text-indent: 0em">status</th>
+			                  			<td colspan="2">状态码</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data</th>
+			                  			<td colspan="2">文字说明</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.id</th>
+			                  			<td colspan="2">车型ID</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.accelerationTime</th>
+			                  			<td colspan="2">0-100km/h加速时间</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.anEngine</th>
+			                  			<td colspan="2">  发动机</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.appearanceColor</th>
+			                  			<td colspan="2">外观颜色</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.batteryChargingTime</th>
+			                  			<td colspan="2">无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.batteryWarrantyPolicy</th>
+			                  			<td colspan="2">无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.blend</th>
+			                  			<td colspan="2">混合工况油耗[L/100km]</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.bodyType</th>
+			                  			<td colspan="2">车身型式</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.brandName</th>
+			                  			<td colspan="2">品牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.carLine</th>
+			                  			<td colspan="2">车系</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.carModel</th>
+			                  			<td colspan="2">车型</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.dynamicType</th>
+			                  			<td colspan="2">动力类型</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.gearboxType</th>
+			                  			<td colspan="2">变速箱类型</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.guidePrice</th>
+			                  			<td colspan="2">厂商指导价</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.manufacturer</th>
+			                  			<td colspan="2">厂牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.maximumPower</th>
+			                  			<td colspan="2">最大功率/最大扭矩</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.modelLevel</th>
+			                  			<td colspan="2">车型级别</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.nationalSubsidiesForNewEnergyVehicles</th>
+			                  			<td colspan="2">无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.pureElectricMaximumRange</th>
+			                  			<td colspan="2">无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.referencePrice</th>
+			                  			<td colspan="2">商家参考价</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.standard</th>
+			                  			<td colspan="2">环保标准</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.timeToMarket</th>
+			                  			<td colspan="2">上市时间</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.topSpeed</th>
+			                  			<td colspan="2">最高车速[km/h]</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.totalMotorPower</th>
+			                  			<td colspan="2">无描述</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.warrantyPolicy</th>
+			                  			<td colspan="2">保修政策</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.images</th>
+			                  			<td colspan="2">图片URL，以 逗号 连接</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.series_id</th>
+			                  			<td colspan="2">车系ID</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.brand_id</th>
+			                  			<td colspan="2">品牌ID</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.user_code</th>
+			                  			<td colspan="2">001</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.user_name</th>
+			                  			<td colspan="2">张三</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.create_at</th>
+			                  			<td colspan="2">添加时间</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.update_at</th>
+			                  			<td colspan="2">最近更新时间</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.cid</th>
+			                  			<td colspan="2">商户ID</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.comno</th>
+			                  			<td colspan="2">门店</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.comnocode</th>
+			                  			<td colspan="2">适用门店</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.basic_information</th>
+			                  			<td colspan="2">基本信息</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.body_size</th>
+			                  			<td colspan="2">车身尺寸</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.dynamic_system</th>
+			                  			<td colspan="2">动力系统</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.chassis</th>
+			                  			<td colspan="2">底盘</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.safe_configuration</th>
+			                  			<td colspan="2">安全配置</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.driving_assistance</th>
+			                  			<td colspan="2">驾驶辅助</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.external_allocation</th>
+			                  			<td colspan="2">外部配置</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.internal_allocation</th>
+			                  			<td colspan="2">内部配置</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.seat_configuration</th>
+			                  			<td colspan="2">座椅配置</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.infotainment</th>
+			                  			<td colspan="2">信息娱乐</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 response_body_text_ishide -->
+	            			            		<h4>成功响应示例</h4>
+	            		<pre><code>{
+    "status": "success",
+    "data": {
+        "id": 3,
+        "accelerationTime": null,
+        "anEngine": "  ",
+        "appearanceColor": null,
+        "batteryChargingTime": null,
+        "batteryWarrantyPolicy": null,
+        "blend": null,
+        "bodyType": null,
+        "brandName": "宝马",
+        "carLine": "AA33",
+        "carModel": "车型名称",
+        "dynamicType": null,
+        "gearboxType": null,
+        "guidePrice": null,
+        "manufacturer": "他妈宝马",
+        "maximumPower": "",
+        "modelLevel": null,
+        "nationalSubsidiesForNewEnergyVehicles": null,
+        "pureElectricMaximumRange": null,
+        "referencePrice": null,
+        "standard": null,
+        "timeToMarket": null,
+        "topSpeed": null,
+        "totalMotorPower": null,
+        "warrantyPolicy": null,
+        "images": "图片URL，以 逗号 连接",
+        "series_id": 1,
+        "brand_id": 19,
+        "user_code": "001",
+        "user_name": "张三",
+        "create_at": "0000-00-00 00:00:00",
+        "update_at": "0000-00-00 00:00:00",
+        "cid": 1,
+        "comno": "A02",
+        "comnocode": "A01,A02",
+        "basic_information": [],
+        "body_size": [],
+        "dynamic_system": [],
+        "chassis": [],
+        "safe_configuration": [],
+        "driving_assistance": [],
+        "external_allocation": [],
+        "internal_allocation": [],
+        "seat_configuration": [],
+        "infotainment": []
+    }
 }</code></pre>
 	            		
 	            		<!-- 开始 response_body_error_text -->
@@ -3918,7 +4268,7 @@
 			                  				              						              						              				<tr>
 			                  			<th>plan_visit_date</th>
 			                  			<td>计划回访日期，visitday如果有传则可不传</td>
-			                  			<td>无描述</td>
+			                  			<td>计划回访日期</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
