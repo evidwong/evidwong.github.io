@@ -21,7 +21,7 @@
 <script type="text/javascript" src="https://img.cdn.apipost.cn/statics/build-in/bootstrap/js/bootstrap.js"></script>
 <script language="javascript">
 	$(function(){
-		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"3","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"4","menu":[{"apiid":"41913","name":"\u7ef4\u4fee\u8d44\u6599","sort":"0"},{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"2"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"3"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"4"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"5"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"6"},{"apiid":"33080","name":"\u6218\u8d25","sort":"7"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"8"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"2","menu":[{"apiid":"47981","name":"\u8f66\u578b\u5217\u8868","sort":"0"},{"apiid":"47669","name":"\u8f66\u578b\u56fe\u7247\u4e0a\u4f20","sort":"1"},{"apiid":"55369","name":"\u81ea\u5b9a\u4e49\u8f66\u578b\u8be6\u7ec6\u4fe1\u606f","sort":"2"},{"apiid":"43647","name":"\u54c1\u724c\u5217\u8868","sort":"2"},{"apiid":"47545","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u7cfb","sort":"4"},{"apiid":"47635","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u578b","sort":"5"}]},{"folder_id":"4722","name":"\u57fa\u7840","sort":"1","menu":[{"apiid":"41921","name":"\u6388\u6743","sort":"0"}]}];
+		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"3","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"56863","name":"\u6240\u6709\u8f66\u7cfb","sort":"1"},{"apiid":"32632","name":"\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"4","menu":[{"apiid":"41913","name":"\u7ef4\u4fee\u8d44\u6599","sort":"0"},{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"2"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"3"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"4"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"5"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"6"},{"apiid":"33080","name":"\u6218\u8d25","sort":"7"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"8"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"2","menu":[{"apiid":"47981","name":"\u8f66\u578b\u5217\u8868","sort":"0"},{"apiid":"47669","name":"\u8f66\u578b\u56fe\u7247\u4e0a\u4f20","sort":"1"},{"apiid":"55369","name":"\u81ea\u5b9a\u4e49\u8f66\u578b\u8be6\u7ec6\u4fe1\u606f","sort":"2"},{"apiid":"43647","name":"\u54c1\u724c\u5217\u8868","sort":"2"},{"apiid":"47545","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u7cfb","sort":"4"},{"apiid":"47635","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u578b","sort":"5"}]},{"folder_id":"4722","name":"\u57fa\u7840","sort":"1","menu":[{"apiid":"41921","name":"\u6388\u6743","sort":"0"}]}];
 		let _init_apiid = 47981;
 
 		//排序
@@ -1053,6 +1053,568 @@
                 }
             ],
             "count": 2
+        }
+    ]
+}</code></pre>
+	            		
+	            		<!-- 开始 response_body_error_text -->
+	            			            		<h4>失败响应示例</h4>
+	            		<pre><code>{
+    "status": "error",
+    "message": "参数错误"
+}</code></pre>
+	            			          		</section>
+	        	</div>
+	      	</div>
+	      		    	<div class="page-wrapper hide" tabindex="56863" role="main">
+	        	<div class="page-inner">
+	          		<section class="markdown-section">
+	            		<h1><i class="fa fa-link" aria-hidden="true"></i>所有车系</h1>
+	            			            		<h4>接口URL</h4>
+	            		<code>http://bsy.test/api/v1/cars/listseries?cid=1&comno=A01&brand=宝马</code>
+	            		<h4>请求方式</h4>
+	            		<code>GET</code>
+	            		<h4>请求 Content-Type</h4>
+	            		<code>application/x-www-form-urlencoded</code>
+
+	            		<!-- 开始 request_all_header -->
+	            		
+	            		<!-- 开始 request_header -->
+	            			            		<div class="document-block-div request_header-div">
+		            		<h4>请求自定义Header</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>Authorization</th>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU1NDhjYjcyODFiMWNiOTA3MTYyNjY1MTU4YWUzYjAyMTJhY2JiOTQ1ZjEyMmVlOTc0NjBjOTUzOGJmMjYxNzY5NjA5ZGQzNGU1ZTM1OGQ1In0.eyJhdWQiOiIyIiwianRpIjoiNTU0OGNiNzI4MWIxY2I5MDcxNjI2NjUxNThhZTNiMDIxMmFjYmI5NDVmMTIyZWU5NzQ2MGM5NTM4YmYyNjE3Njk2MDlkZDM0ZTVlMzU4ZDUiLCJpYXQiOjE1NjMzNTQxNDIsIm5iZiI6MTU2MzM1NDE0MiwiZXhwIjoxNTYzNDQwNTQyLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.MKCv9m1VnbF-D4EvtVPrH8BzGJADCODbnOLhpMKAkVjdSLHiTLeGZ7tqsCsZPz0L_qEwJ991N3GTdRBuUFy410Vm_s5OTjPH3AVSIyRLIqeZNhuVG2cBHIk5Sb7_ua1_A0FUQ1wf1-xKPlcQxIUqWolITbkdlMT30FUKuBbj1GQ0a158m7jgLDzv8KrXSdGBm6dsdbe9hDus6tGgpyc0jRZcOIr4_9suwx9G6IAXS-KkjNAnYQlhfDj7KWIq4CtfWwY1re8Hcl832DmVt-7uq1vdfG7eC_O3OKlV2YRU4R64TKxtmszuEuZE0z2AkkUTAOLkrtmM9uV2iy-UJjUPhv-KFbPEq_PwZ8U-woRQiSPm2Rx0KG1TS0VIsS055xp4vRYxM1B287-H6DK1YssppEqEFX644VKuTyO5rTT9Z31mLcf6S7YMj3x3K2OAnxycZJfjVO8Remyv3qRH1diHLLtWpvyLtCE48S5wFpMxbpTNl7jhpIm4s4jGaMKGQ9jixSleWZHmUSZXKuMsqDdec-84Qed4MzUR_cGudCQdMk14lXAbb16KD5BEijd2eyYIapCAkdWWQBwSv28JM7QVNZtje5tiu8A7qC9eayEoYzvYIyq-CKhjR3jTAG5RqMlkQdhvjsaQRHA-qD0vKeECmfPTTbKLD_S523uGCNlLol4</td>
+			                  			<td>Bearer</td>
+			                  		</tr>
+			                  				              						              						              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 request_body -->
+	            			            			            		<div class="document-block-div request_body-div">
+		            		<h4>请求Body参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>cid</th>
+			                  			<td>1</td>
+			                  			<td>商户号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>comno</th>
+			                  			<td>A01</td>
+			                  			<td>门店号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>brand</th>
+			                  			<td>奥迪</td>
+			                  			<td>品牌</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            								
+						<!-- 开始 request_Query -->
+	            			            		<div class="document-block-div request_query-div">
+		            		<h4>请求Query参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th>示例值</th>
+			                  			<th>参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th>cid</th>
+			                  			<td>1</td>
+			                  			<td>商户ID</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>comno</th>
+			                  			<td>A01</td>
+			                  			<td>门店号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>brand</th>
+			                  			<td>宝马</td>
+			                  			<td>品牌</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 response_header -->
+	            		
+	            		<!-- 开始 response_cookie -->
+	            		
+	            		<!-- 开始 response_body -->
+	            			            		<div class="document-block-div response_body-div">
+		            		<h4>响应参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th>参数</th>
+			                  			<th colspan="2">参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th style="text-indent: 0em">status</th>
+			                  			<td colspan="2">状态码</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data</th>
+			                  			<td colspan="2">数据集</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.brand</th>
+			                  			<td colspan="2">品牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.count</th>
+			                  			<td colspan="2">车源总数量</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.name</th>
+			                  			<td colspan="2">厂牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 2em">data.items</th>
+			                  			<td colspan="2">列表</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 4em">data.items.name</th>
+			                  			<td colspan="2">车系</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 4em">data.childs.brand</th>
+			                  			<td colspan="2">品牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 4em">data.items.firm</th>
+			                  			<td colspan="2">厂牌</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 4em">data.items.count</th>
+			                  			<td colspan="2">车源数量</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.items.series_type</th>
+			                  			<td colspan="2">0 自带车系，1 自定义车系</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
+	            		
+	            		<!-- 开始 response_body_text_ishide -->
+	            			            		<h4>成功响应示例</h4>
+	            		<pre><code>{
+    "status": "success",
+    "data": [
+        {
+            "brand": "宝马",
+            "count": 0,
+            "name": "华晨宝马",
+            "items": [
+                {
+                    "id": 371,
+                    "name": "1系",
+                    "brand": "宝马",
+                    "firm": "华晨宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 372,
+                    "name": "2系旅行车",
+                    "brand": "宝马",
+                    "firm": "华晨宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 373,
+                    "name": "3系",
+                    "brand": "宝马",
+                    "firm": "华晨宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 374,
+                    "name": "5系",
+                    "brand": "宝马",
+                    "firm": "华晨宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 375,
+                    "name": "X1",
+                    "brand": "宝马",
+                    "firm": "华晨宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 376,
+                    "name": "X3",
+                    "brand": "宝马",
+                    "firm": "华晨宝马",
+                    "series_type": 0,
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "brand": "宝马",
+            "count": 0,
+            "name": "华晨宝马新能源",
+            "items": [
+                {
+                    "id": 377,
+                    "name": "X1 插电混动",
+                    "brand": "宝马",
+                    "firm": "华晨宝马新能源",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 378,
+                    "name": "5系 插电混动",
+                    "brand": "宝马",
+                    "firm": "华晨宝马新能源",
+                    "series_type": 0,
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "brand": "宝马",
+            "count": 0,
+            "name": "进口宝马",
+            "items": [
+                {
+                    "id": 379,
+                    "name": "1系",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 380,
+                    "name": "2系",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 381,
+                    "name": "3系GT",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 382,
+                    "name": "4系",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 383,
+                    "name": "5系",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 384,
+                    "name": "6系",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 385,
+                    "name": "6系GT",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 386,
+                    "name": "7系",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 387,
+                    "name": "8系",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 388,
+                    "name": "X2",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 389,
+                    "name": "X3",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 390,
+                    "name": "X4",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 391,
+                    "name": "X5",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 392,
+                    "name": "X6",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 393,
+                    "name": "X7",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 394,
+                    "name": "3系 停售",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 395,
+                    "name": "5系GT 停售",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 396,
+                    "name": "X1 停售",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 397,
+                    "name": "Z3 停售",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 398,
+                    "name": "Z4 停售",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 399,
+                    "name": "Z8 停售",
+                    "brand": "宝马",
+                    "firm": "进口宝马",
+                    "series_type": 0,
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "brand": "宝马",
+            "count": 0,
+            "name": "进口宝马新能源",
+            "items": [
+                {
+                    "id": 400,
+                    "name": "X5 插电混动",
+                    "brand": "宝马",
+                    "firm": "进口宝马新能源",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 401,
+                    "name": "7系 插电混动",
+                    "brand": "宝马",
+                    "firm": "进口宝马新能源",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 402,
+                    "name": "i3",
+                    "brand": "宝马",
+                    "firm": "进口宝马新能源",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 403,
+                    "name": "i8",
+                    "brand": "宝马",
+                    "firm": "进口宝马新能源",
+                    "series_type": 0,
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "brand": "宝马",
+            "count": 0,
+            "name": "进口宝马M",
+            "items": [
+                {
+                    "id": 404,
+                    "name": "M2",
+                    "brand": "宝马",
+                    "firm": "进口宝马M",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 405,
+                    "name": "M3",
+                    "brand": "宝马",
+                    "firm": "进口宝马M",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 406,
+                    "name": "M4",
+                    "brand": "宝马",
+                    "firm": "进口宝马M",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 407,
+                    "name": "M5",
+                    "brand": "宝马",
+                    "firm": "进口宝马M",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 408,
+                    "name": "M6",
+                    "brand": "宝马",
+                    "firm": "进口宝马M",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 409,
+                    "name": "M8",
+                    "brand": "宝马",
+                    "firm": "进口宝马M",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 410,
+                    "name": "X5 M",
+                    "brand": "宝马",
+                    "firm": "进口宝马M",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 411,
+                    "name": "X6 M",
+                    "brand": "宝马",
+                    "firm": "进口宝马M",
+                    "series_type": 0,
+                    "count": 0
+                },
+                {
+                    "id": 412,
+                    "name": "1系M 停售",
+                    "brand": "宝马",
+                    "firm": "进口宝马M",
+                    "series_type": 0,
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "brand": "宝马",
+            "count": 2,
+            "name": "他妈宝马",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "AA33",
+                    "brand": "宝马",
+                    "firm": "他妈宝马",
+                    "series_type": 1,
+                    "count": 2
+                }
+            ]
         }
     ]
 }</code></pre>
