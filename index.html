@@ -21,8 +21,8 @@
 <script type="text/javascript" src="https://img.cdn.apipost.cn/statics/build-in/bootstrap/js/bootstrap.js"></script>
 <script language="javascript">
 	$(function(){
-		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"3","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"56863","name":"\u6240\u6709\u8f66\u7cfb","sort":"1"},{"apiid":"32632","name":"\u5df2\u6709\u8f66\u6e90\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"58075","name":"\u5220\u9664\u8f66\u578b","sort":"6"},{"apiid":"58074","name":"\u5220\u9664\u8f66\u7cfb","sort":"6"},{"apiid":"32840","name":"\u5220\u9664","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"4","menu":[{"apiid":"41913","name":"\u7ef4\u4fee\u8d44\u6599","sort":"0"},{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"2"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"3"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"4"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"5"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"6"},{"apiid":"33080","name":"\u6218\u8d25","sort":"7"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"8"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"2","menu":[{"apiid":"47981","name":"\u8f66\u578b\u5217\u8868","sort":"0"},{"apiid":"47669","name":"\u8f66\u578b\u56fe\u7247\u4e0a\u4f20","sort":"1"},{"apiid":"55369","name":"\u81ea\u5b9a\u4e49\u8f66\u578b\u8be6\u7ec6\u4fe1\u606f","sort":"2"},{"apiid":"43647","name":"\u54c1\u724c\u5217\u8868","sort":"2"},{"apiid":"47545","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u7cfb","sort":"4"},{"apiid":"47635","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u578b","sort":"5"}]},{"folder_id":"4722","name":"\u57fa\u7840","sort":"1","menu":[{"apiid":"41921","name":"\u6388\u6743","sort":"0"}]},{"folder_id":-1,"name":"\u9ed8\u8ba4\u6587\u4ef6\u5939","sort":-1,"menu":[{"apiid":"60478","name":"\u65b0\u5efa\u63a5\u53e3","sort":"0"}]}];
-		let _init_apiid = 60478;
+		let _left_menus = [{"folder_id":"3706","name":"\u8f66\u6e90\u7ba1\u7406","sort":"3","menu":[{"apiid":"32618","name":"\u54c1\u724c\u5217\u8868","sort":"0"},{"apiid":"56863","name":"\u6240\u6709\u8f66\u7cfb","sort":"1"},{"apiid":"32632","name":"\u5df2\u6709\u8f66\u6e90\u8f66\u7cfb","sort":"1"},{"apiid":"32678","name":"\u62a5\u4ef7\u5217\u8868","sort":"2"},{"apiid":"32703","name":"\u65b0\u589e\u3001\u7f16\u8f91","sort":"3"},{"apiid":"32822","name":"\u4e0a\u3001\u4e0b\u67b6","sort":"5"},{"apiid":"58075","name":"\u5220\u9664\u8f66\u578b","sort":"6"},{"apiid":"58074","name":"\u5220\u9664\u8f66\u7cfb","sort":"6"},{"apiid":"32840","name":"\u5220\u9664\u8f66\u6e90","sort":"6"}]},{"folder_id":"3737","name":"\u610f\u5411\u7ba1\u7406","sort":"4","menu":[{"apiid":"41913","name":"\u7ef4\u4fee\u8d44\u6599","sort":"0"},{"apiid":"33754","name":"\u516c\u5171\u8d44\u6599","sort":"1"},{"apiid":"32857","name":"\u610f\u5411\u5217\u8868","sort":"2"},{"apiid":"35800","name":"\u9500\u552e\u987e\u95ee","sort":"3"},{"apiid":"33079","name":"\u5206\u914d\u4e1a\u52a1\u5458","sort":"4"},{"apiid":"33050","name":"\u610f\u5411\u56de\u8bbf\u5217\u8868","sort":"4"},{"apiid":"33098","name":"\u6dfb\u52a0\u3001\u4fee\u6539\u610f\u5411\u8bb0\u5f55","sort":"5"},{"apiid":"33073","name":"\u56de\u8bbf(\u8ddf\u8e2a)","sort":"6"},{"apiid":"33080","name":"\u6218\u8d25","sort":"7"},{"apiid":"33087","name":"\u53d6\u6d88\u6218\u8d25","sort":"8"}]},{"folder_id":"4501","name":"\u8f66\u578b\u5e93","sort":"2","menu":[{"apiid":"47981","name":"\u8f66\u578b\u5217\u8868","sort":"0"},{"apiid":"47669","name":"\u8f66\u578b\u56fe\u7247\u4e0a\u4f20","sort":"1"},{"apiid":"55369","name":"\u8f66\u578b\u8be6\u7ec6\u4fe1\u606f","sort":"2"},{"apiid":"43647","name":"\u54c1\u724c\u5217\u8868","sort":"2"},{"apiid":"47545","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u7cfb","sort":"4"},{"apiid":"47635","name":"\u65b0\u589e\u3001\u7f16\u8f91\u8f66\u578b","sort":"5"}]},{"folder_id":"4722","name":"\u57fa\u7840","sort":"1","menu":[{"apiid":"41921","name":"\u6388\u6743","sort":"0"}]}];
+		let _init_apiid = 47981;
 
 		//排序
 		_left_menus.sort(function(a, b){
@@ -220,199 +220,7 @@
 		        </div>
 		        <h1><!-- 百思易接口文档 --></h1>
 	    	</div>
-	    		    	<div class="page-wrapper hide" tabindex="60478" role="main">
-	        	<div class="page-inner">
-	          		<section class="markdown-section">
-	            		<h1><i class="fa fa-link" aria-hidden="true"></i>新建接口</h1>
-	            			            		<h4>接口URL</h4>
-	            		<code>https://api-jiesuan.yunzhanghu.com/api/payment/v1/order-alipay</code>
-	            		<h4>请求方式</h4>
-	            		<code>POST</code>
-	            		<h4>请求 Content-Type</h4>
-	            		<code>application/x-www-form-urlencoded</code>
-
-	            		<!-- 开始 request_all_header -->
-	            			            		<div class="document-block-div request_all_header-div">
-		            		<h4>请求原始Header</h4>
-		            		<table>
-		              			<thead>
-		                			<tr>
-			                  			<th>参数</th>
-			                  			<th>示例值</th>
-			                  			<th>参数描述</th>
-			                  		</tr>
-		              			</thead>
-		              			<tbody>
-		              						              						              				<tr>
-			                  			<th>Accept</th>
-			                  			<td>*/*</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>Accept-Encoding</th>
-			                  			<td>gzip, deflate, br</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>Accept-Language</th>
-			                  			<td>zh-CN</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>Content-Type</th>
-			                  			<td>application/x-www-form-urlencoded</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>Cookie</th>
-			                  			<td>apipost=https://www.apipost.cn/</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>Origin</th>
-			                  			<td>https://www.apipost.cn</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>User-Agent</th>
-			                  			<td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) ApiPost/2.4.106 Chrome/69.0.3497.106 Electron/4.0.0 Safari/537.36</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>dealer-id</th>
-			                  			<td>25695327</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>request-id</th>
-			                  			<td>1563778534</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              			</tbody>
-		            		</table>
-		            	</div>
-	            		
-	            		<!-- 开始 request_header -->
-	            			            		<div class="document-block-div request_header-div">
-		            		<h4>请求自定义Header</h4>
-		            		<table>
-		              			<thead>
-		                			<tr>
-			                  			<th>参数</th>
-			                  			<th>示例值</th>
-			                  			<th>参数描述</th>
-			                  		</tr>
-		              			</thead>
-		              			<tbody>
-		              						              						              				<tr>
-			                  			<th>dealer-id</th>
-			                  			<td>25695327</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>request-id</th>
-			                  			<td>1563778534               </td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              			</tbody>
-		            		</table>
-		            	</div>
-	            		
-	            		<!-- 开始 request_body -->
-	            			            			            		<div class="document-block-div request_body-div">
-		            		<h4>请求Body参数</h4>
-		            		<table>
-		              			<thead>
-		                			<tr>
-			                  			<th>参数</th>
-			                  			<th>示例值</th>
-			                  			<th>参数描述</th>
-			                  		</tr>
-		              			</thead>
-		              			<tbody>
-		              						              						              				<tr>
-			                  			<th>data</th>
-			                  			<td>My9MRnVHc01zUGRXazQ2Z2RObm43dk8vYkNsdUFSUnlISmtaUjdIcVFVWWdOSFRWUDhrL3NlK3FPR01mNnZSV1NjMmhXaDJOeWRMaFVIQjRFY2laekxWNStOTkUxSkJjZk4yajNya0xkQTN6OHhJaDlTa29ZRDlmY2lnZWdtUXB4K295akprMEVHUW93TmtIK0x0L1pYRE9zWTBDNFFLd3R0TFRyeTRiOUkvaURWZTc4Z2R6MG9ONDVFeENveSszUVhWckFzSjFUa09CMFNnWnM3L2xHenRZWHFhT1ZtNmx6enorRkRYN2g4eUY2YmF4aTBxS0NvYVRad0VkUjAyZHpiWjZwc0tMbFBLZnQxcFlwSGdKanFaZm5MZWhESFdvZXAxTFFqNWxYRVhZSTNLREI5TkpYQXFhcXhHK3pnUUwxbFEzM3gvNzNVVW4vd2U2R3QwUlRuaHU5V2k2aWpVeVRwNkZEd3RSQkFmVnd5TmwxbFFNdnR6akJhNmw4NENq</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>mess</th>
-			                  			<td>123</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>timestamp</th>
-			                  			<td>1563778534</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>sign</th>
-			                  			<td>cfc86d06bac1044914f02f77934cd3e1c904d18613db685cef760f4aa936cc5c</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>sign_type</th>
-			                  			<td>sha256</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              			</tbody>
-		            		</table>
-		            	</div>
-	            								
-						<!-- 开始 request_Query -->
-	            		
-	            		<!-- 开始 response_header -->
-	            			            		<div class="document-block-div response_header-div">
-		            		<h4>响应头</h4>
-		            		<table>
-		              			<thead>
-		                			<tr>
-			                  			<th>参数</th>
-			                  			<th>示例值</th>
-			                  			<th>参数描述</th>
-			                  		</tr>
-		              			</thead>
-		              			<tbody>
-		              						              						              				<tr>
-			                  			<th>date</th>
-			                  			<td> Mon, 22 Jul 2019 07:04:55 GMT</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>server</th>
-			                  			<td> nginx</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>connection</th>
-			                  			<td> keep-alive</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>content-length</th>
-			                  			<td> 66</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
-			                  			<th>content-type</th>
-			                  			<td> application/json; charset=utf-8</td>
-			                  			<td>无描述</td>
-			                  		</tr>
-			                  				              						              			</tbody>
-		            		</table>
-		            	</div>
-	            		
-	            		<!-- 开始 response_cookie -->
-	            		
-	            		<!-- 开始 response_body -->
-	            		
-	            		<!-- 开始 response_body_text_ishide -->
-	            		
-	            		<!-- 开始 response_body_error_text -->
-	            			          		</section>
-	        	</div>
-	      	</div>
-	      		    	<div class="page-wrapper hide" tabindex="47981" role="main">
+	    		    	<div class="page-wrapper hide" tabindex="47981" role="main">
 	        	<div class="page-inner">
 	          		<section class="markdown-section">
 	            		<h1><i class="fa fa-link" aria-hidden="true"></i>车型列表</h1>
@@ -718,7 +526,7 @@
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>Content-Type</th>
-			                  			<td>multipart/form-data; boundary=----WebKitFormBoundary3HtXTvKckgzJ8ADM</td>
+			                  			<td>multipart/form-data; boundary=----WebKitFormBoundaryKIctXHyipnMbYvzx</td>
 			                  			<td>无描述</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
@@ -733,7 +541,7 @@
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>User-Agent</th>
-			                  			<td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) ApiPost/2.4.106 Chrome/69.0.3497.106 Electron/4.0.0 Safari/537.36</td>
+			                  			<td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) ApiPost/2.4.106 Chrome/69.0.3497.106 Electron/4.0.0 Safari/537.36</td>
 			                  			<td>无描述</td>
 			                  		</tr>
 			                  				              						              			</tbody>
@@ -754,7 +562,7 @@
 			                  		</tr>
 		              			</thead>
 		              			<tbody>
-		              						              						              						              						              				<tr>
+		              						              						              				<tr>
 			                  			<th>cid</th>
 			                  			<td>1</td>
 			                  			<td>无描述</td>
@@ -824,7 +632,7 @@
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>date</th>
-			                  			<td> Sat, 06 Jul 2019 02:31:46 GMT</td>
+			                  			<td> Fri, 09 Aug 2019 01:28:56 GMT</td>
 			                  			<td>无描述</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
@@ -2296,7 +2104,7 @@
 	      		    	<div class="page-wrapper hide" tabindex="55369" role="main">
 	        	<div class="page-inner">
 	          		<section class="markdown-section">
-	            		<h1><i class="fa fa-link" aria-hidden="true"></i>自定义车型详细信息</h1>
+	            		<h1><i class="fa fa-link" aria-hidden="true"></i>车型详细信息</h1>
 	            			            		<h4>接口URL</h4>
 	            		<code>http://bsy.test/api/v1/cars/getmodelinfo?cid=1&comno=A01&id=3</code>
 	            		<h4>请求方式</h4>
@@ -2511,11 +2319,11 @@
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th style="text-indent: 2em">data.user_code</th>
-			                  			<td colspan="2">001</td>
+			                  			<td colspan="2">操作人编码</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th style="text-indent: 2em">data.user_name</th>
-			                  			<td colspan="2">张三</td>
+			                  			<td colspan="2">操作人</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th style="text-indent: 2em">data.create_at</th>
@@ -3935,10 +3743,10 @@
 		              			<tbody>
 		              						              						              				<tr>
 			                  			<th>Authorization</th>
-			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjgyNGYzMmU1YzUyNjM3MWUzOWQwMDYxZjZhOWNhOTA5M2ZhMmE2NTM4MmZjNDU0YjNjYjMyMzIyYmVkMjNmMGVlN2RhYWI4ZjM3NjY3NjViIn0.eyJhdWQiOiIxIiwianRpIjoiODI0ZjMyZTVjNTI2MzcxZTM5ZDAwNjFmNmE5Y2E5MDkzZmEyYTY1MzgyZmM0NTRiM2NiMzIzMjJiZWQyM2YwZWU3ZGFhYjhmMzc2Njc2NWIiLCJpYXQiOjE1NjA0ODM4MTIsIm5iZiI6MTU2MDQ4MzgxMiwiZXhwIjoxNTYwNTcwMjEwLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.PVnEAGjyDDz9izByuBtyebqlikvd-h7QCjzlE_7sn2m8CdORMii6sijPrkiwciA918Hf6jroRhDC0Dsgt4jQ98mjKxjhK6JXc4IMsSUjY2aRM6HPelycatXTnZwRkdCYoA1PiTzmPS7VZaDGpVbprTEzGZvqIwaAjvTFJc4gKR6iRKwnu7y8kjDupgN8RxeTBjAkiaQ1c5qxXwG9-4ysAdMLbncBJfJRqGBDGpMdL8Cwc24TqSP3fikbM4QC2K2LsD1BuYPcKiATMO2-ItMWqNClOt11FrFYnbPYCLRqOnX3hs4inJO4AQdF2rDLCiEwhGTAibEd5yzHN6hCWaLOGesfqLvXpocANAwhqWKl4rwOK21GsUJlsVDdGl6wT4JWtebFwR8VEb08KsbJJiJ3b3r_6g8eEneJXpU4pgSsX5ZrU4gN4IdUKWaymUmPeSxA69OeADv4J4gBaDEXc4DItw1sIIAnkwtozPMID-ltM0EaDBEpvp4nZSJNTfVHjwCvgwFM-vZw3mdkat6PBNIDXcTy_3CFNYm0xLOgpBUAKNCJfNfPOHas6AjM04Hb3giyS_vugK01a-OcxmBupd4CqA0LbiQv-EGQvac_UO0GYbSJLK0TBMa1VYvX4fixPE3rPPN_4gOOHvqasKsECml2YLUOltnyuC_QI7Ay42rXbQo</td>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAzNzQzMjFjMjhmM2FlMGIyNDcwNTk5ZTgzNzM2ZTJkNDVhNmM2Yjc2ZWNjOTg4MGY1YWI2NWRmOGQ2YzMxNTcwZDUyMDUxZWJkMjEyMzM4In0.eyJhdWQiOiIyIiwianRpIjoiMDM3NDMyMWMyOGYzYWUwYjI0NzA1OTllODM3MzZlMmQ0NWE2YzZiNzZlY2M5ODgwZjVhYjY1ZGY4ZDZjMzE1NzBkNTIwNTFlYmQyMTIzMzgiLCJpYXQiOjE1NjUzMTQxMzYsIm5iZiI6MTU2NTMxNDEzNiwiZXhwIjoxNTY1NDAwNTM1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.YX6Iend7j53tTQpC3_ZS48kTFDOIIvu4sqBLRPwWWtJqeBPYB8nFFrg6zqb2VQ770XyOqE1gCsR4F4GcPvmNOjqzg6bD-LqPxlSZGzdPm7_rXdCCHpzTXwOHKpb-bn6oDu4nKo_c-P4jpu4xexJVGcIwN0ASa9VxZoJSeYKtHGoMctv-p0yb6ZGDASpXX5Zv8ONMQYBma_xVcXNZOsQ-PRfXneh4ybO9odsP6_F5KB0SaDSyNQKVxsyC5s5uUpXDmxUSkIbEA5lfnzgCFHyqFQrGc0rzKUCy-0tdsGfrbXUEcf0LavTLDt8UVvQu1GVLP1X4Kv4zxYXNbvDA1GmtjJJW2_wasE0HwQNr0Lt0yQR6ruCKAy3yOujRevG0FEE2YWRiCICtfMM71jDLjMs956fkSv2zM8LSgvnOh3trdIhKzjhNmZPTSJ_zOouyG_IOE5XEHMQU2o3kkICNLRQvccgKdyl38a69iRUQnW8Aeq9vlTrBJMmkbG-gIB8ILOQLpAeSbIHCtDChEldZJuj0HXhXqXVNDhCnqpPCvgHHO-3qXNovVESc9-nPbcTE2AMlHem8if_JzNQy6V3B98QESIgnihEmlzizzdGauvAfgnJN2v6zb7ymLJfMN9Ix8_MRMuzfVI-oFHY6OQKmP55pgBomt7L5F8zq2Ri_8vZnK9w</td>
 			                  			<td>Bearer</td>
 			                  		</tr>
-			                  				              						              						              						              			</tbody>
+			                  				              						              			</tbody>
 		            		</table>
 		            	</div>
 	            		
@@ -3957,7 +3765,7 @@
 		              						              						              				<tr>
 			                  			<th>cid</th>
 			                  			<td>1</td>
-			                  			<td>商户号</td>
+			                  			<td>商户ID</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>comno</th>
@@ -3975,18 +3783,23 @@
 			                  			<td>操作员</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
+			                  			<th>carid</th>
+			                  			<td>7</td>
+			                  			<td>车型ID 【必传】</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
 			                  			<th>data[0][car_id]</th>
-			                  			<td>0</td>
+			                  			<td>3</td>
 			                  			<td>车源ID</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>data[0][basic_id]</th>
 			                  			<td>1148</td>
-			                  			<td>车型ID</td>
+			                  			<td>车型ID 【可不传】</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>data[0][price]</th>
-			                  			<td>12</td>
+			                  			<td>36</td>
 			                  			<td>价格</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
@@ -4047,7 +3860,7 @@
 			                  				              						              						              				<tr>
 			                  			<th>data[0][basic_config]</th>
 			                  			<td>{&quot;brand&quot;:&quot;宝马&quot;,...}</td>
-			                  			<td>基本信息，JSON字符串</td>
+			                  			<td>基本信息，JSON字符串【已取消】</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>data[0][hg_config]</th>
@@ -4057,7 +3870,7 @@
 			                  				              						              						              				<tr>
 			                  			<th>data[0][from_type]</th>
 			                  			<td>车型来源，0系统自带车型，1 自定义车型</td>
-			                  			<td>0系统自带车型，1 自定义车型</td>
+			                  			<td>0系统自带车型，1 自定义车型 【车型库编辑报价：0，车源编辑报价：1 】</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>data[0][series_type]</th>
@@ -4165,7 +3978,7 @@
 		              			<tbody>
 		              						              						              				<tr>
 			                  			<th>Authorization</th>
-			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJmMDRlZjI3MWUyMjdkOTFjNmIxNGFhM2I4NWQ2ZGUyMmJkZTc2MDZkNDkyOGY2OTAyZmQzYTBmYjMzN2UxMmZlMGYyMmMxM2E5ZWVhMmVkIn0.eyJhdWQiOiIyIiwianRpIjoiYmYwNGVmMjcxZTIyN2Q5MWM2YjE0YWEzYjg1ZDZkZTIyYmRlNzYwNmQ0OTI4ZjY5MDJmZDNhMGZiMzM3ZTEyZmUwZjIyYzEzYTllZWEyZWQiLCJpYXQiOjE1NjIzMTQ3MDMsIm5iZiI6MTU2MjMxNDcwMywiZXhwIjoxNTYyNDAxMTAyLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.ygiG6UQ0Qgc_hYV_ih58aKAl9UEdJik44KiSGZ6Q26M-9FG4epPqVHSTc8eNl7T7EWrV1Y3V1t7WIBc0JhMiX88mulsKXor4jpTvXxukemqUKE5maIynK_YdeBYVIVUJBy21TQEMQuG-cIapTuL4kSQn1eKKuRHGOw0ecbkiQVGBK7m-t3vIomGk1Wfkkz3ZJAjgXNiviX3strVzo4e006Vl9KJV_vih4RgQPtKD4bOK7Ce3J_XWMvGIUL97O6f0tfjMgOytqXPXyOR5T9HjbtIIH5PfACUPM53Us7DDbAvL-dDU8KBCGq0Ce9Y9JC3NploDBazt_YAznStkvhmX2tMtLxgiNbr7UdYJb-f43yNxqotKTwQztU9q1dSfQ1OMcL_iiaLgw-YHKAmHsFtII-2c4W53bsVOPaVhj2_JSg9Erx5IZez_Z6zB9BEEM80qGTNziLKfjXyzhmo0eiaEFfqmN2-55fSktGwY-vfq8mOjxCCvQWdF-qqAH8Apm-Pcz0w_Rj7fisHaTh53dSq0Rg8qxGfbYgtMKqWtG9bDZywrp7R8vpX4Qiae9RTsP_HyRZIz-oCDr6pUYsXr1m-HXoBZ8FxBHeIXt7SlIuvhG-kjC-SKrTLRTNqIRQ_ykMtwchoix7M85zMx1DxZX2xyc2ujMhr3FaigrRkEM4JY7HE</td>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAzNzQzMjFjMjhmM2FlMGIyNDcwNTk5ZTgzNzM2ZTJkNDVhNmM2Yjc2ZWNjOTg4MGY1YWI2NWRmOGQ2YzMxNTcwZDUyMDUxZWJkMjEyMzM4In0.eyJhdWQiOiIyIiwianRpIjoiMDM3NDMyMWMyOGYzYWUwYjI0NzA1OTllODM3MzZlMmQ0NWE2YzZiNzZlY2M5ODgwZjVhYjY1ZGY4ZDZjMzE1NzBkNTIwNTFlYmQyMTIzMzgiLCJpYXQiOjE1NjUzMTQxMzYsIm5iZiI6MTU2NTMxNDEzNiwiZXhwIjoxNTY1NDAwNTM1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.YX6Iend7j53tTQpC3_ZS48kTFDOIIvu4sqBLRPwWWtJqeBPYB8nFFrg6zqb2VQ770XyOqE1gCsR4F4GcPvmNOjqzg6bD-LqPxlSZGzdPm7_rXdCCHpzTXwOHKpb-bn6oDu4nKo_c-P4jpu4xexJVGcIwN0ASa9VxZoJSeYKtHGoMctv-p0yb6ZGDASpXX5Zv8ONMQYBma_xVcXNZOsQ-PRfXneh4ybO9odsP6_F5KB0SaDSyNQKVxsyC5s5uUpXDmxUSkIbEA5lfnzgCFHyqFQrGc0rzKUCy-0tdsGfrbXUEcf0LavTLDt8UVvQu1GVLP1X4Kv4zxYXNbvDA1GmtjJJW2_wasE0HwQNr0Lt0yQR6ruCKAy3yOujRevG0FEE2YWRiCICtfMM71jDLjMs956fkSv2zM8LSgvnOh3trdIhKzjhNmZPTSJ_zOouyG_IOE5XEHMQU2o3kkICNLRQvccgKdyl38a69iRUQnW8Aeq9vlTrBJMmkbG-gIB8ILOQLpAeSbIHCtDChEldZJuj0HXhXqXVNDhCnqpPCvgHHO-3qXNovVESc9-nPbcTE2AMlHem8if_JzNQy6V3B98QESIgnihEmlzizzdGauvAfgnJN2v6zb7ymLJfMN9Ix8_MRMuzfVI-oFHY6OQKmP55pgBomt7L5F8zq2Ri_8vZnK9w</td>
 			                  			<td>Bearer</td>
 			                  		</tr>
 			                  				              						              			</tbody>
@@ -4187,17 +4000,22 @@
 		              						              						              				<tr>
 			                  			<th>id</th>
 			                  			<td>2303</td>
-			                  			<td>车系ID，编辑更新时必传</td>
+			                  			<td>车系ID【0 新增；>0 编辑，车系对应的ID】</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>cid</th>
 			                  			<td>1</td>
-			                  			<td>商户号</td>
+			                  			<td>商户ID</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>comno</th>
 			                  			<td>A02</td>
 			                  			<td>门店号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>comnocode</th>
+			                  			<td>A01,A02</td>
+			                  			<td>适用门店</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>user_code</th>
@@ -4210,11 +4028,6 @@
 			                  			<td>操作员名称</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
-			                  			<th>series</th>
-			                  			<td>车系名称</td>
-			                  			<td>车系</td>
-			                  		</tr>
-			                  				              						              						              				<tr>
 			                  			<th>brand_id</th>
 			                  			<td>13</td>
 			                  			<td>汽车品牌ID</td>
@@ -4225,9 +4038,14 @@
 			                  			<td>厂牌</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
-			                  			<th>comnocode</th>
-			                  			<td>A01,A02</td>
-			                  			<td>适用门店</td>
+			                  			<th>series</th>
+			                  			<td>车系名称</td>
+			                  			<td>车系</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>imgName</th>
+			                  			<td>图片地址</td>
+			                  			<td>图片地址</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
@@ -4698,10 +4516,10 @@
 		              			<tbody>
 		              						              						              				<tr>
 			                  			<th>Authorization</th>
-			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjEwYTA3NTVhN2YyMmU3ZjlkZDI5NGU4ZmU2ODQzYzEyMmZiZDlmMDQ3MzBhOGRiZWQ3NzVkY2U2ZTkwMjE4NzE1YjlmNWY2NjY4OGQyYjIxIn0.eyJhdWQiOiIyIiwianRpIjoiMTBhMDc1NWE3ZjIyZTdmOWRkMjk0ZThmZTY4NDNjMTIyZmJkOWYwNDczMGE4ZGJlZDc3NWRjZTZlOTAyMTg3MTViOWY1ZjY2Njg4ZDJiMjEiLCJpYXQiOjE1NjI4NDE0NzcsIm5iZiI6MTU2Mjg0MTQ3NywiZXhwIjoxNTYyOTI3ODc2LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.tDZwFsz8hyvCg99HNdqWY4kyUKrZN7ALMFQPppN3_kT_LcgASMog65TGL3a-JMgQOAi33kadisYMuj-mJ0xNl0rZpAjZ9xl-8VDT3P3olLF8GHaJMMYx27U43KYuMHliz5oJ6LX7esf1CA5o3-XU3m9uHI5jvHNXxApPPAx-VmKoJVHR07P-7GaYT2tEK68kse-od5aOMiwDB5f8fbi0NFyMfbovTr6gQhE2oFGeE1J4Q-wcbUOHXJALMqze8hsb8znS9Bf0wKtvGCeJKMnFgcyW1mX4N_BoZyz1glnaNLAoTM8HHC3ieTrXGijwOWtl0tJQEbrxnOoynY8161c5q5ZTbDZQX9YJWj2d-cZzZr0hoH1XkXVA7wOPwq2vHdfAFCFBtV3pbLDsnd4CNueQ7coz3LjbmJSgYDDKTGRYNL1UqOWolmCkNQ3EIk3ZvJQwD3eDNQhmTKRpfjLJgzHtiwl4VE2J8fqqp_ljYZXc-CahW554AXp-Qp3H79pGPChXPyThMeUVd5b6JNvSXbgR0Y1w33izFII0DkkJrgpdr7r53hSQbpft5WD2HIg0jJFTHxDXUTwAEZTgSvLdVwEIfzMqQOwr7myRAnFhFyhN6IhJOo-tHsY13Qr2tL6TPjxwVS0LjPVifYmeK3SCGRxLd59kcjyRnO8mpYjSXm_KHs8</td>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAzNzQzMjFjMjhmM2FlMGIyNDcwNTk5ZTgzNzM2ZTJkNDVhNmM2Yjc2ZWNjOTg4MGY1YWI2NWRmOGQ2YzMxNTcwZDUyMDUxZWJkMjEyMzM4In0.eyJhdWQiOiIyIiwianRpIjoiMDM3NDMyMWMyOGYzYWUwYjI0NzA1OTllODM3MzZlMmQ0NWE2YzZiNzZlY2M5ODgwZjVhYjY1ZGY4ZDZjMzE1NzBkNTIwNTFlYmQyMTIzMzgiLCJpYXQiOjE1NjUzMTQxMzYsIm5iZiI6MTU2NTMxNDEzNiwiZXhwIjoxNTY1NDAwNTM1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.YX6Iend7j53tTQpC3_ZS48kTFDOIIvu4sqBLRPwWWtJqeBPYB8nFFrg6zqb2VQ770XyOqE1gCsR4F4GcPvmNOjqzg6bD-LqPxlSZGzdPm7_rXdCCHpzTXwOHKpb-bn6oDu4nKo_c-P4jpu4xexJVGcIwN0ASa9VxZoJSeYKtHGoMctv-p0yb6ZGDASpXX5Zv8ONMQYBma_xVcXNZOsQ-PRfXneh4ybO9odsP6_F5KB0SaDSyNQKVxsyC5s5uUpXDmxUSkIbEA5lfnzgCFHyqFQrGc0rzKUCy-0tdsGfrbXUEcf0LavTLDt8UVvQu1GVLP1X4Kv4zxYXNbvDA1GmtjJJW2_wasE0HwQNr0Lt0yQR6ruCKAy3yOujRevG0FEE2YWRiCICtfMM71jDLjMs956fkSv2zM8LSgvnOh3trdIhKzjhNmZPTSJ_zOouyG_IOE5XEHMQU2o3kkICNLRQvccgKdyl38a69iRUQnW8Aeq9vlTrBJMmkbG-gIB8ILOQLpAeSbIHCtDChEldZJuj0HXhXqXVNDhCnqpPCvgHHO-3qXNovVESc9-nPbcTE2AMlHem8if_JzNQy6V3B98QESIgnihEmlzizzdGauvAfgnJN2v6zb7ymLJfMN9Ix8_MRMuzfVI-oFHY6OQKmP55pgBomt7L5F8zq2Ri_8vZnK9w</td>
 			                  			<td>Bearer</td>
 			                  		</tr>
-			                  				              						              						              						              			</tbody>
+			                  				              						              			</tbody>
 		            		</table>
 		            	</div>
 	            		
@@ -4719,7 +4537,7 @@
 		              			<tbody>
 		              						              						              				<tr>
 			                  			<th>id</th>
-			                  			<td>2303</td>
+			                  			<td>1</td>
 			                  			<td>车型ID，编辑更新时必传</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
@@ -4744,7 +4562,7 @@
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>series_id</th>
-			                  			<td>2303</td>
+			                  			<td>1</td>
 			                  			<td>车系ID</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
@@ -4754,7 +4572,7 @@
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>model</th>
-			                  			<td>车型名称</td>
+			                  			<td>2019 车型名称 涡轮增压</td>
 			                  			<td>车型名称</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
@@ -4840,7 +4658,7 @@
 			                  				              						              						              				<tr>
 			                  			<th>from_type</th>
 			                  			<td>1</td>
-			                  			<td>0 自带车弄，1 自定义车型</td>
+			                  			<td>0 自带车弄，1 自定义车型【已取消】</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>formalities</th>
@@ -5243,7 +5061,7 @@
 	          		<section class="markdown-section">
 	            		<h1><i class="fa fa-link" aria-hidden="true"></i>删除车型</h1>
 	            			            		<h4>接口URL</h4>
-	            		<code>http://newbsy.test/api/v1/cars/delmodel</code>
+	            		<code>http://bsy.test/api/v1/cars/delmodel</code>
 	            		<h4>请求方式</h4>
 	            		<code>POST</code>
 	            		<h4>请求 Content-Type</h4>
@@ -5265,7 +5083,7 @@
 		              			<tbody>
 		              						              						              				<tr>
 			                  			<th>Authorization</th>
-			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAzYmYyYTAwYWI4MjA4N2IyNDFkNTI4NTYzNDg0N2MzNDg1MmVmYjA3NDM1N2E2ODhjOGUxNjgzNjcxNGFiOTkwOTE0YzY2MzBjNmMwMmVkIn0.eyJhdWQiOiIxIiwianRpIjoiMDNiZjJhMDBhYjgyMDg3YjI0MWQ1Mjg1NjM0ODQ3YzM0ODUyZWZiMDc0MzU3YTY4OGM4ZTE2ODM2NzE0YWI5OTA5MTRjNjYzMGM2YzAyZWQiLCJpYXQiOjE1NjAzOTI0NzEsIm5iZiI6MTU2MDM5MjQ3MSwiZXhwIjoxNTYwNDc4ODcxLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.KRy7RZmAAHFnutwiblCxLqSXP8L2SuyJ7O51UReKd1FYVJvKaU5KMoSY1n-W35lyWKV4aokQfZQjGOThyFtcIBg0uu6Uz2dam26kXpp2TrHPCUrTrHw2isbSj-gnSnSI9kbaMI_IamXVfJXSJql8el3GSLqPNXk_0n9ScbvjCrd6nPSiZFN2QQ3i0BQ0mIn_83sGkxedkjdFjnfWd-biEyfbX1AdfMnICPxPiGix0BLruclXWiToDlHx6NpOqvE3eliATm-fNsEIVb5nb1xFg0pflV1rR62m9NRZvMecweptx2KnCisYAuPv1yrEkw2XNkvFkUKZls_oLWSQqkCGnxEeKaSfaFWOdfYrqSs3jSNSaYLvapJqqcUHlteCjhhrm9sA1pGAfLuySn03n7kGqUZ0LzE3KlG2sPEc3aqcJ_dcNgKHQR1KJ9g5eY0ouls1pdKvQQglqXhfAjYNnhDMGXPb8fEzhnKn_P0_QYS0wVSkYtBnL8YInPNPTot5tiHv2bzp5jRjtS2tdqV_Kbz-vv7o8-gcuHq7MmqRrY7lhatTXSWF33CJsnAek2VxuuhBlSEpGAW_Ucl8VO0vaHYSyViXQ9OrxYJFZtQHDgBhHz4YT_IpgudS90H2AyQUD3qbnTNIi5Qd1G9ps5dWQ4qrcHK90AqxGfiWQSBRK7yn2Rs</td>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAzNzQzMjFjMjhmM2FlMGIyNDcwNTk5ZTgzNzM2ZTJkNDVhNmM2Yjc2ZWNjOTg4MGY1YWI2NWRmOGQ2YzMxNTcwZDUyMDUxZWJkMjEyMzM4In0.eyJhdWQiOiIyIiwianRpIjoiMDM3NDMyMWMyOGYzYWUwYjI0NzA1OTllODM3MzZlMmQ0NWE2YzZiNzZlY2M5ODgwZjVhYjY1ZGY4ZDZjMzE1NzBkNTIwNTFlYmQyMTIzMzgiLCJpYXQiOjE1NjUzMTQxMzYsIm5iZiI6MTU2NTMxNDEzNiwiZXhwIjoxNTY1NDAwNTM1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.YX6Iend7j53tTQpC3_ZS48kTFDOIIvu4sqBLRPwWWtJqeBPYB8nFFrg6zqb2VQ770XyOqE1gCsR4F4GcPvmNOjqzg6bD-LqPxlSZGzdPm7_rXdCCHpzTXwOHKpb-bn6oDu4nKo_c-P4jpu4xexJVGcIwN0ASa9VxZoJSeYKtHGoMctv-p0yb6ZGDASpXX5Zv8ONMQYBma_xVcXNZOsQ-PRfXneh4ybO9odsP6_F5KB0SaDSyNQKVxsyC5s5uUpXDmxUSkIbEA5lfnzgCFHyqFQrGc0rzKUCy-0tdsGfrbXUEcf0LavTLDt8UVvQu1GVLP1X4Kv4zxYXNbvDA1GmtjJJW2_wasE0HwQNr0Lt0yQR6ruCKAy3yOujRevG0FEE2YWRiCICtfMM71jDLjMs956fkSv2zM8LSgvnOh3trdIhKzjhNmZPTSJ_zOouyG_IOE5XEHMQU2o3kkICNLRQvccgKdyl38a69iRUQnW8Aeq9vlTrBJMmkbG-gIB8ILOQLpAeSbIHCtDChEldZJuj0HXhXqXVNDhCnqpPCvgHHO-3qXNovVESc9-nPbcTE2AMlHem8if_JzNQy6V3B98QESIgnihEmlzizzdGauvAfgnJN2v6zb7ymLJfMN9Ix8_MRMuzfVI-oFHY6OQKmP55pgBomt7L5F8zq2Ri_8vZnK9w</td>
 			                  			<td>Bearer</td>
 			                  		</tr>
 			                  				              						              			</tbody>
@@ -5353,7 +5171,7 @@
 	          		<section class="markdown-section">
 	            		<h1><i class="fa fa-link" aria-hidden="true"></i>删除车系</h1>
 	            			            		<h4>接口URL</h4>
-	            		<code>http://newbsy.test/api/v1/cars/delseries</code>
+	            		<code>http://bsy.test/api/v1/cars/delseries</code>
 	            		<h4>请求方式</h4>
 	            		<code>POST</code>
 	            		<h4>请求 Content-Type</h4>
@@ -5375,7 +5193,7 @@
 		              			<tbody>
 		              						              						              				<tr>
 			                  			<th>Authorization</th>
-			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAzYmYyYTAwYWI4MjA4N2IyNDFkNTI4NTYzNDg0N2MzNDg1MmVmYjA3NDM1N2E2ODhjOGUxNjgzNjcxNGFiOTkwOTE0YzY2MzBjNmMwMmVkIn0.eyJhdWQiOiIxIiwianRpIjoiMDNiZjJhMDBhYjgyMDg3YjI0MWQ1Mjg1NjM0ODQ3YzM0ODUyZWZiMDc0MzU3YTY4OGM4ZTE2ODM2NzE0YWI5OTA5MTRjNjYzMGM2YzAyZWQiLCJpYXQiOjE1NjAzOTI0NzEsIm5iZiI6MTU2MDM5MjQ3MSwiZXhwIjoxNTYwNDc4ODcxLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.KRy7RZmAAHFnutwiblCxLqSXP8L2SuyJ7O51UReKd1FYVJvKaU5KMoSY1n-W35lyWKV4aokQfZQjGOThyFtcIBg0uu6Uz2dam26kXpp2TrHPCUrTrHw2isbSj-gnSnSI9kbaMI_IamXVfJXSJql8el3GSLqPNXk_0n9ScbvjCrd6nPSiZFN2QQ3i0BQ0mIn_83sGkxedkjdFjnfWd-biEyfbX1AdfMnICPxPiGix0BLruclXWiToDlHx6NpOqvE3eliATm-fNsEIVb5nb1xFg0pflV1rR62m9NRZvMecweptx2KnCisYAuPv1yrEkw2XNkvFkUKZls_oLWSQqkCGnxEeKaSfaFWOdfYrqSs3jSNSaYLvapJqqcUHlteCjhhrm9sA1pGAfLuySn03n7kGqUZ0LzE3KlG2sPEc3aqcJ_dcNgKHQR1KJ9g5eY0ouls1pdKvQQglqXhfAjYNnhDMGXPb8fEzhnKn_P0_QYS0wVSkYtBnL8YInPNPTot5tiHv2bzp5jRjtS2tdqV_Kbz-vv7o8-gcuHq7MmqRrY7lhatTXSWF33CJsnAek2VxuuhBlSEpGAW_Ucl8VO0vaHYSyViXQ9OrxYJFZtQHDgBhHz4YT_IpgudS90H2AyQUD3qbnTNIi5Qd1G9ps5dWQ4qrcHK90AqxGfiWQSBRK7yn2Rs</td>
+			                  			<td>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAzNzQzMjFjMjhmM2FlMGIyNDcwNTk5ZTgzNzM2ZTJkNDVhNmM2Yjc2ZWNjOTg4MGY1YWI2NWRmOGQ2YzMxNTcwZDUyMDUxZWJkMjEyMzM4In0.eyJhdWQiOiIyIiwianRpIjoiMDM3NDMyMWMyOGYzYWUwYjI0NzA1OTllODM3MzZlMmQ0NWE2YzZiNzZlY2M5ODgwZjVhYjY1ZGY4ZDZjMzE1NzBkNTIwNTFlYmQyMTIzMzgiLCJpYXQiOjE1NjUzMTQxMzYsIm5iZiI6MTU2NTMxNDEzNiwiZXhwIjoxNTY1NDAwNTM1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.YX6Iend7j53tTQpC3_ZS48kTFDOIIvu4sqBLRPwWWtJqeBPYB8nFFrg6zqb2VQ770XyOqE1gCsR4F4GcPvmNOjqzg6bD-LqPxlSZGzdPm7_rXdCCHpzTXwOHKpb-bn6oDu4nKo_c-P4jpu4xexJVGcIwN0ASa9VxZoJSeYKtHGoMctv-p0yb6ZGDASpXX5Zv8ONMQYBma_xVcXNZOsQ-PRfXneh4ybO9odsP6_F5KB0SaDSyNQKVxsyC5s5uUpXDmxUSkIbEA5lfnzgCFHyqFQrGc0rzKUCy-0tdsGfrbXUEcf0LavTLDt8UVvQu1GVLP1X4Kv4zxYXNbvDA1GmtjJJW2_wasE0HwQNr0Lt0yQR6ruCKAy3yOujRevG0FEE2YWRiCICtfMM71jDLjMs956fkSv2zM8LSgvnOh3trdIhKzjhNmZPTSJ_zOouyG_IOE5XEHMQU2o3kkICNLRQvccgKdyl38a69iRUQnW8Aeq9vlTrBJMmkbG-gIB8ILOQLpAeSbIHCtDChEldZJuj0HXhXqXVNDhCnqpPCvgHHO-3qXNovVESc9-nPbcTE2AMlHem8if_JzNQy6V3B98QESIgnihEmlzizzdGauvAfgnJN2v6zb7ymLJfMN9Ix8_MRMuzfVI-oFHY6OQKmP55pgBomt7L5F8zq2Ri_8vZnK9w</td>
 			                  			<td>Bearer</td>
 			                  		</tr>
 			                  				              						              			</tbody>
@@ -5397,7 +5215,7 @@
 		              						              						              				<tr>
 			                  			<th>cid</th>
 			                  			<td>1</td>
-			                  			<td>商户号</td>
+			                  			<td>商户ID</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>comno</th>
@@ -5621,7 +5439,7 @@
 	      		    	<div class="page-wrapper hide" tabindex="32840" role="main">
 	        	<div class="page-inner">
 	          		<section class="markdown-section">
-	            		<h1><i class="fa fa-link" aria-hidden="true"></i>删除</h1>
+	            		<h1><i class="fa fa-link" aria-hidden="true"></i>删除车源</h1>
 	            			            		<h4>接口URL</h4>
 	            		<code>http://newbsy.test/api/v1/cars/delcarqoute</code>
 	            		<h4>请求方式</h4>
