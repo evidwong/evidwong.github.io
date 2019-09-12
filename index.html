@@ -6758,7 +6758,7 @@
 	          		<section class="markdown-section">
 	            		<h1 class="api-name-class"><i class="fa fa-link" aria-hidden="true"></i>统计信息 <a href="https://www.apipost.cn/client.php?project_id=10079&apiid=112957" class="btn btn-gray" target="_blank"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>接口测试</a> </h1>
 	            		                        	            		<h4>接口URL</h4>
-	            		<code>http://newbsy.test/api/v1/sold/static_info?cid=1&comno=A01</code>
+	            		<code>http://newbsy.test/api/v1/sold/static_info?cid=1&comno=A01&searchKey=时间条件&seearchTime=2019-09-12 00:00:00,2019-09-13 00:00:00</code>
                         	            		<h4>请求方式</h4>
 	            		<code>GET</code>
                                                                         	            		<!-- 开始 request_all_header -->
@@ -6812,6 +6812,18 @@
 			                  			<td>A01</td>
                                         <td>必填</td>
 			                  			<td>门店号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>searchKey</th>
+			                  			<td>时间条件</td>
+                                        <td>必填</td>
+			                  			<td>时间搜索键值</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>seearchTime</th>
+			                  			<td>2019-09-12 00:00:00,2019-09-13 00:00:00</td>
+                                        <td>必填</td>
+			                  			<td>时间区间，以 逗号 ,  拼接</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
