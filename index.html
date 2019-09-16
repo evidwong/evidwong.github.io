@@ -7265,7 +7265,7 @@
 			                  			<th>mealId</th>
 			                  			<td>1</td>
                                         <td>必填</td>
-			                  			<td>套餐ID</td>
+			                  			<td>车源 套餐数组列表中的 索引 0……N</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
@@ -7381,8 +7381,121 @@
 	            		<!-- 开始 response_cookie -->
 	            		
 	            		<!-- 开始 response_body -->
+	            			            		<div class="document-block-div response_body-div">
+		            		<h4>响应参数</h4>
+		            		<table>
+		              			<thead>
+		                			<tr>
+			                  			<th style="width: 28%">参数</th>
+			                  			<th  style="width: 72%"colspan="2">参数描述</th>
+			                  		</tr>
+		              			</thead>
+		              			<tbody>
+		              						              						              				<tr>
+			                  			<th style="text-indent: 0em">push_num</th>
+			                  			<td colspan="2">推送次数</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">HQuoteCode</th>
+			                  			<td colspan="2">报价单号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">HCallInCode</th>
+			                  			<td colspan="2">意向单号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">CustomerName</th>
+			                  			<td colspan="2">客户名称</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">HandPhone</th>
+			                  			<td colspan="2">客户手机号</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">……</th>
+			                  			<td colspan="2">其它和车源字段一样</td>
+			                  		</tr>
+			                  				              						              			</tbody>
+		            		</table>
+		            	</div>
 	            		
 	            		<!-- 开始 response_body_text_ishide -->
+	            			            		<h4>成功响应示例</h4>
+	            		<pre><code>{
+	"status": 200,
+	"data": {
+		"current_page": 1,
+		"data": [
+			{
+				"id": 2,
+				"cid": 1,
+				"comno": "A01",
+				"user_code": "bsy005",
+				"user_name": "麻涛",
+				"basic_id": 1149,
+				"brand": "宝马",
+				"series": "1系",
+				"model": "2018款 118i 运动版",
+				"firm": "华晨宝马",
+				"displacement": "",
+				"engine": "",
+				"engine_type": "",
+				"body_type": "",
+				"appearance_color": "",
+				"blend": "5.5-6.5",
+				"gear_box_type": "",
+				"dynamic_type": "",
+				"model_level": "",
+				"standard": "",
+				"guide_price": "22.58",
+				"price": "1.00",
+				"province": 120000,
+				"city": 120100,
+				"county": 120115,
+				"meal": {
+					"id": "57",
+					"name": "美容套餐一",
+					"price": "0.00"
+				},
+				"start_time": "0000-00-00",
+				"end_time": "0000-00-00",
+				"create_at": "0000-00-00 00:00:00",
+				"update_at": "0000-00-00 00:00:00",
+				"status": 1,
+				"is_hot": 0,
+				"remarks": "1",
+				"admin_id": 0,
+				"is_del": 0,
+				"is_lock": 0,
+				"type": "国产",
+				"car_ref_price": "12.136",
+				"year": 2019,
+				"max_num_power": "100KW",
+				"tag": "标签",
+				"basic_config": {
+					"发动机": "涡轮增压"
+				},
+				"hg_config": "亮点配置",
+				"from_type": 0,
+				"push_num": 1,
+				"HQuoteCode": "A000001236",
+				"HCallInCode": "A20000",
+				"CustomerName": "张三",
+				"HandPhone": "客户手机号"
+			}
+		],
+		"first_page_url": "http://newbsy.test/api/v1/cars/quotelist?page=1",
+		"from": 1,
+		"last_page": 1,
+		"last_page_url": "http://newbsy.test/api/v1/cars/quotelist?page=1",
+		"next_page_url": null,
+		"path": "http://newbsy.test/api/v1/cars/quotelist",
+		"per_page": "10",
+		"prev_page_url": null,
+		"to": 8,
+		"total": 1,
+	}
+}</code></pre>
 	            		
 	            		<!-- 开始 response_body_error_text -->
 	            			          		</section>
