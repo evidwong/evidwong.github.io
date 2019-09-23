@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="https://img.cdn.apipost.cn/statics/build-in/bootstrap/css/document.css?v=2152">
 <link rel="stylesheet" type="text/css" href="https://img.cdn.apipost.cn/statics/build-in/bootstrap/css/markdown.css?v=1326">
 <link rel="stylesheet" type="text/css" href="https://img.cdn.apipost.cn/statics/build-in/nprogress-0.2.0/nprogress.css">
+<link rel="stylesheet" type="text/css" href="https://console.apipost.cn/doc/statics/css/doc.css">
 <script type="text/javascript" src="https://img.cdn.apipost.cn/statics/build-in/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="https://img.cdn.apipost.cn/statics/build-in/clipboard.js-master/clipboard.min.js"></script>
 <script type="text/javascript" src="https://img.cdn.apipost.cn/statics/build-in/nprogress-0.2.0/nprogress.js"></script>
@@ -2234,7 +2235,7 @@ customer: 1 客户来源, 2 公司性质, 3 客户种类, 4 客户级别, 5 回�
 	          		<section class="markdown-section">
 	            		<h1 class="api-name-class"><i class="fa fa-link" aria-hidden="true"></i>意向列表 <a href="https://www.apipost.cn/client.php?project_id=10079&apiid=32857" class="btn btn-gray" target="_blank"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>接口测试</a> </h1>
 	            		                        	            		<h4>接口URL</h4>
-	            		<code>http://newbsy.test/api/v1/sold/getList?cid=1&amp;comno=A01&amp;size=1&amp;page=1&amp;job=即将,成交&amp;search_key=HandPhone&amp;search_value=15019427980&amp;price=8&amp;search_date_key=&amp;search_date_start=&amp;search_date_end=</code>
+	            		<code>http://newbsy.test/api/v1/sold/getList?cid=1&amp;comno=A01&amp;size=1&amp;page=1&amp;job=即将,成交&amp;search_key=HandPhone&amp;search_value=15019427980&amp;price=8&amp;search_date_key=&amp;search_date_start=&amp;search_date_end=&amp;IsLost=1</code>
                         	            		<h4>请求方式</h4>
 	            		<code>GET</code>
                                                                         	            		<!-- 开始 request_all_header -->
@@ -2258,7 +2259,7 @@ customer: 1 客户来源, 2 公司性质, 3 客户种类, 4 客户级别, 5 回�
                                         <td>必填</td>
 			                  			<td>Bearer</td>
 			                  		</tr>
-			                  				              						              						              						              			</tbody>
+			                  				              						              			</tbody>
 		            		</table>
 		            	</div>
 	            		
@@ -2331,44 +2332,50 @@ customer: 1 客户来源, 2 公司性质, 3 客户种类, 4 客户级别, 5 回�
 			                  				              						              						              				<tr>
 			                  			<th>job</th>
 			                  			<td>即将,成交</td>
-                                        <td>必填</td>
+                                        <td>选填</td>
 			                  			<td>意向类型，数组 或 ”,“ 分号连接字符串</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>search_key</th>
 			                  			<td>HandPhone</td>
-                                        <td>必填</td>
+                                        <td>选填</td>
 			                  			<td>查询条件字段名</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>search_value</th>
 			                  			<td>15019427980</td>
-                                        <td>必填</td>
+                                        <td>选填</td>
 			                  			<td>查询条件值</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>price</th>
 			                  			<td>8</td>
-                                        <td>必填</td>
+                                        <td>选填</td>
 			                  			<td>价格</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>search_date_key</th>
 			                  			<td>-</td>
-                                        <td>必填</td>
+                                        <td>选填</td>
 			                  			<td>日期查询条件字段名</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>search_date_start</th>
 			                  			<td>-</td>
-                                        <td>必填</td>
+                                        <td>选填</td>
 			                  			<td>日期开始</td>
 			                  		</tr>
 			                  				              						              						              				<tr>
 			                  			<th>search_date_end</th>
 			                  			<td>-</td>
-                                        <td>必填</td>
+                                        <td>选填</td>
 			                  			<td>日期结束</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th>IsLost</th>
+			                  			<td>1</td>
+                                        <td>选填</td>
+			                  			<td>战败查询条件: 1 是，0 否【默认】</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
@@ -2444,6 +2451,18 @@ customer: 1 客户来源, 2 公司性质, 3 客户种类, 4 客户级别, 5 回�
 			                  				              						              						              				<tr>
 			                  			<th style="text-indent: 0em">data.data.payed</th>
 			                  			<td colspan="2">订金已付 的数量</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.LastPushPacket</th>
+			                  			<td colspan="2">最后一次推送套餐记录【字段取 套餐接口字段】</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.LastPushPacket.pushPrice</th>
+			                  			<td colspan="2">推送价格</td>
+			                  		</tr>
+			                  				              						              						              				<tr>
+			                  			<th style="text-indent: 0em">data.LastPushPacket.packetPrice</th>
+			                  			<td colspan="2">推送套餐价格</td>
 			                  		</tr>
 			                  				              						              			</tbody>
 		            		</table>
@@ -2564,7 +2583,8 @@ customer: 1 客户来源, 2 公司性质, 3 客户种类, 4 客户级别, 5 回�
                     "DriveType": null,
                     "Linkman": null,
                     "Area": null,
-                    "ReceptionSource": null
+                    "ReceptionSource": null,
+                    "LastPushPacket": null
                 }
             ],
             "intent_types": [
